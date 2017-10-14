@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C64889BF506ABFB29E8EF4E4 /* Pods_partnershit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A477131D00BD3F7A9E19965C /* Pods_partnershit.framework */; };
+		C74917849E8E04FF5CA8F0C0 /* Pods_partnershitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797AAB80CE4AABA082CC2CC9 /* Pods_partnershitTests.framework */; };
+		CA481862A07D77BB8B334EE2 /* Pods_partnershitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F17899F7E1869A59C97951B /* Pods_partnershitUITests.framework */; };
+		CE449C521F921C1D00DCC08B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE449C511F92196F00DCC08B /* GoogleService-Info.plist */; };
+		CE449C531F921C2100DCC08B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE449C511F92196F00DCC08B /* GoogleService-Info.plist */; };
+		CE449C541F921C2200DCC08B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE449C511F92196F00DCC08B /* GoogleService-Info.plist */; };
+		CE449C561F922D7500DCC08B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE449C551F922D7500DCC08B /* DetailViewController.swift */; };
+		CE449C591F92499400DCC08B /* StatementCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE449C571F92499400DCC08B /* StatementCellTableViewCell.swift */; };
+		CE449C5A1F92499400DCC08B /* StatementCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE449C581F92499400DCC08B /* StatementCellTableViewCell.xib */; };
+		CE449C611F9288F000DCC08B /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE449C601F9288F000DCC08B /* UserNotifications.framework */; };
+		CE449C631F9288F000DCC08B /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE449C621F9288F000DCC08B /* UserNotificationsUI.framework */; };
+		CE449C6D1F9288F000DCC08B /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE449C5F1F9288F000DCC08B /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CECC67E81F9217D700172EBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC67E71F9217D700172EBB /* AppDelegate.swift */; };
 		CECC67EA1F9217D700172EBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC67E91F9217D700172EBB /* ViewController.swift */; };
 		CECC67ED1F9217D700172EBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECC67EB1F9217D700172EBB /* Main.storyboard */; };
@@ -17,6 +29,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CE449C6B1F9288F000DCC08B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CECC67DC1F9217D700172EBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE449C5E1F9288F000DCC08B;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
 		CECC67F91F9217D700172EBB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CECC67DC1F9217D700172EBB /* Project object */;
@@ -33,7 +52,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CE449C711F9288F000DCC08B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE449C6D1F9288F000DCC08B /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1FD5915097D5613897ADEDAA /* Pods-partnershit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-partnershit.release.xcconfig"; path = "Pods/Target Support Files/Pods-partnershit/Pods-partnershit.release.xcconfig"; sourceTree = "<group>"; };
+		2F17899F7E1869A59C97951B /* Pods_partnershitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_partnershitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44FECE8C2DB5A026D11CDB15 /* Pods-partnershit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-partnershit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-partnershit/Pods-partnershit.debug.xcconfig"; sourceTree = "<group>"; };
+		696BF66EE5CB69F7B3B94F43 /* Pods-partnershitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-partnershitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-partnershitTests/Pods-partnershitTests.release.xcconfig"; sourceTree = "<group>"; };
+		797AAB80CE4AABA082CC2CC9 /* Pods_partnershitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_partnershitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A277438276504AD71EBE64A3 /* Pods-partnershitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-partnershitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-partnershitUITests/Pods-partnershitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A477131D00BD3F7A9E19965C /* Pods_partnershit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_partnershit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE449C511F92196F00DCC08B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		CE449C551F922D7500DCC08B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CE449C571F92499400DCC08B /* StatementCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementCellTableViewCell.swift; sourceTree = "<group>"; };
+		CE449C581F92499400DCC08B /* StatementCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementCellTableViewCell.xib; sourceTree = "<group>"; };
+		CE449C5F1F9288F000DCC08B /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE449C601F9288F000DCC08B /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		CE449C621F9288F000DCC08B /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		CE7E48421F928A130016D872 /* partnershit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = partnershit.entitlements; sourceTree = "<group>"; };
 		CECC67E41F9217D700172EBB /* partnershit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = partnershit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECC67E71F9217D700172EBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECC67E91F9217D700172EBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,13 +95,25 @@
 		CECC68031F9217D700172EBB /* partnershitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = partnershitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECC68071F9217D700172EBB /* partnershitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = partnershitUITests.swift; sourceTree = "<group>"; };
 		CECC68091F9217D700172EBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D09F505ADF91283E54B70B10 /* Pods-partnershitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-partnershitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-partnershitTests/Pods-partnershitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB087C2EF4CF65FD461F9CE0 /* Pods-partnershitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-partnershitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-partnershitUITests/Pods-partnershitUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE449C5C1F9288F000DCC08B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE449C631F9288F000DCC08B /* UserNotificationsUI.framework in Frameworks */,
+				CE449C611F9288F000DCC08B /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CECC67E11F9217D700172EBB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C64889BF506ABFB29E8EF4E4 /* Pods_partnershit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74917849E8E04FF5CA8F0C0 /* Pods_partnershitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +129,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA481862A07D77BB8B334EE2 /* Pods_partnershitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		400F5AC9E38AA1990C668AAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44FECE8C2DB5A026D11CDB15 /* Pods-partnershit.debug.xcconfig */,
+				1FD5915097D5613897ADEDAA /* Pods-partnershit.release.xcconfig */,
+				D09F505ADF91283E54B70B10 /* Pods-partnershitTests.debug.xcconfig */,
+				696BF66EE5CB69F7B3B94F43 /* Pods-partnershitTests.release.xcconfig */,
+				A277438276504AD71EBE64A3 /* Pods-partnershitUITests.debug.xcconfig */,
+				DB087C2EF4CF65FD461F9CE0 /* Pods-partnershitUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6B5AF37953BA1D48DC0131FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A477131D00BD3F7A9E19965C /* Pods_partnershit.framework */,
+				797AAB80CE4AABA082CC2CC9 /* Pods_partnershitTests.framework */,
+				2F17899F7E1869A59C97951B /* Pods_partnershitUITests.framework */,
+				CE449C601F9288F000DCC08B /* UserNotifications.framework */,
+				CE449C621F9288F000DCC08B /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CECC67DB1F9217D700172EBB = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +168,8 @@
 				CECC67FB1F9217D700172EBB /* partnershitTests */,
 				CECC68061F9217D700172EBB /* partnershitUITests */,
 				CECC67E51F9217D700172EBB /* Products */,
+				400F5AC9E38AA1990C668AAE /* Pods */,
+				6B5AF37953BA1D48DC0131FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +179,7 @@
 				CECC67E41F9217D700172EBB /* partnershit.app */,
 				CECC67F81F9217D700172EBB /* partnershitTests.xctest */,
 				CECC68031F9217D700172EBB /* partnershitUITests.xctest */,
+				CE449C5F1F9288F000DCC08B /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,12 +187,17 @@
 		CECC67E61F9217D700172EBB /* partnershit */ = {
 			isa = PBXGroup;
 			children = (
+				CE7E48421F928A130016D872 /* partnershit.entitlements */,
 				CECC67E71F9217D700172EBB /* AppDelegate.swift */,
 				CECC67E91F9217D700172EBB /* ViewController.swift */,
 				CECC67EB1F9217D700172EBB /* Main.storyboard */,
+				CE449C571F92499400DCC08B /* StatementCellTableViewCell.swift */,
+				CE449C581F92499400DCC08B /* StatementCellTableViewCell.xib */,
+				CE449C551F922D7500DCC08B /* DetailViewController.swift */,
 				CECC67EE1F9217D700172EBB /* Assets.xcassets */,
 				CECC67F01F9217D700172EBB /* LaunchScreen.storyboard */,
 				CECC67F31F9217D700172EBB /* Info.plist */,
+				CE449C511F92196F00DCC08B /* GoogleService-Info.plist */,
 			);
 			path = partnershit;
 			sourceTree = "<group>";
@@ -128,17 +223,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CECC67E31F9217D700172EBB /* partnershit */ = {
+		CE449C5E1F9288F000DCC08B /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CECC680C1F9217D700172EBB /* Build configuration list for PBXNativeTarget "partnershit" */;
+			buildConfigurationList = CE449C6E1F9288F000DCC08B /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
 			buildPhases = (
-				CECC67E01F9217D700172EBB /* Sources */,
-				CECC67E11F9217D700172EBB /* Frameworks */,
-				CECC67E21F9217D700172EBB /* Resources */,
+				CE449C5B1F9288F000DCC08B /* Sources */,
+				CE449C5C1F9288F000DCC08B /* Frameworks */,
+				CE449C5D1F9288F000DCC08B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = CE449C5F1F9288F000DCC08B /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		CECC67E31F9217D700172EBB /* partnershit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CECC680C1F9217D700172EBB /* Build configuration list for PBXNativeTarget "partnershit" */;
+			buildPhases = (
+				C5738D66B3C2EA0091A803B2 /* [CP] Check Pods Manifest.lock */,
+				CECC67E01F9217D700172EBB /* Sources */,
+				CECC67E11F9217D700172EBB /* Frameworks */,
+				CECC67E21F9217D700172EBB /* Resources */,
+				2A2C98376C21CE60EA749938 /* [CP] Embed Pods Frameworks */,
+				A84990BCCFB2D9D973D305E2 /* [CP] Copy Pods Resources */,
+				CE449C711F9288F000DCC08B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE449C6C1F9288F000DCC08B /* PBXTargetDependency */,
 			);
 			name = partnershit;
 			productName = partnershit;
@@ -149,9 +266,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CECC680F1F9217D700172EBB /* Build configuration list for PBXNativeTarget "partnershitTests" */;
 			buildPhases = (
+				3B32ED016A6EE7FE46FD6BCD /* [CP] Check Pods Manifest.lock */,
 				CECC67F41F9217D700172EBB /* Sources */,
 				CECC67F51F9217D700172EBB /* Frameworks */,
 				CECC67F61F9217D700172EBB /* Resources */,
+				25803BF9BB89CA8EE78DEF79 /* [CP] Embed Pods Frameworks */,
+				595F2CCDC90D9294E3FD6795 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CECC68121F9217D700172EBB /* Build configuration list for PBXNativeTarget "partnershitUITests" */;
 			buildPhases = (
+				A18571BF1E53381C3CF57333 /* [CP] Check Pods Manifest.lock */,
 				CECC67FF1F9217D700172EBB /* Sources */,
 				CECC68001F9217D700172EBB /* Frameworks */,
 				CECC68011F9217D700172EBB /* Resources */,
+				5EEF2E20B46A00E870F211B5 /* [CP] Embed Pods Frameworks */,
+				9788D8535D48931EB219F20B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,9 +314,21 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = AnthonyChan;
 				TargetAttributes = {
+					CE449C5E1F9288F000DCC08B = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 					CECC67E31F9217D700172EBB = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					CECC67F71F9217D700172EBB = {
 						CreatedOnToolsVersion = 9.0;
@@ -223,16 +358,26 @@
 				CECC67E31F9217D700172EBB /* partnershit */,
 				CECC67F71F9217D700172EBB /* partnershitTests */,
 				CECC68021F9217D700172EBB /* partnershitUITests */,
+				CE449C5E1F9288F000DCC08B /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE449C5D1F9288F000DCC08B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CECC67E21F9217D700172EBB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CECC67F21F9217D700172EBB /* LaunchScreen.storyboard in Resources */,
+				CE449C521F921C1D00DCC08B /* GoogleService-Info.plist in Resources */,
+				CE449C5A1F92499400DCC08B /* StatementCellTableViewCell.xib in Resources */,
 				CECC67EF1F9217D700172EBB /* Assets.xcassets in Resources */,
 				CECC67ED1F9217D700172EBB /* Main.storyboard in Resources */,
 			);
@@ -242,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE449C531F921C2100DCC08B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,17 +395,183 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE449C541F921C2200DCC08B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		25803BF9BB89CA8EE78DEF79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-partnershitTests/Pods-partnershitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A2C98376C21CE60EA749938 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-partnershit/Pods-partnershit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-partnershit/Pods-partnershit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B32ED016A6EE7FE46FD6BCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-partnershitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		595F2CCDC90D9294E3FD6795 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-partnershitTests/Pods-partnershitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5EEF2E20B46A00E870F211B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-partnershitUITests/Pods-partnershitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9788D8535D48931EB219F20B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-partnershitUITests/Pods-partnershitUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A18571BF1E53381C3CF57333 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-partnershitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A84990BCCFB2D9D973D305E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-partnershit/Pods-partnershit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5738D66B3C2EA0091A803B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-partnershit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		CE449C5B1F9288F000DCC08B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CECC67E01F9217D700172EBB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE449C561F922D7500DCC08B /* DetailViewController.swift in Sources */,
 				CECC67EA1F9217D700172EBB /* ViewController.swift in Sources */,
+				CE449C591F92499400DCC08B /* StatementCellTableViewCell.swift in Sources */,
 				CECC67E81F9217D700172EBB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +595,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CE449C6C1F9288F000DCC08B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE449C5E1F9288F000DCC08B /* OneSignalNotificationServiceExtension */;
+			targetProxy = CE449C6B1F9288F000DCC08B /* PBXContainerItemProxy */;
+		};
 		CECC67FA1F9217D700172EBB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CECC67E31F9217D700172EBB /* partnershit */;
@@ -315,6 +632,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CE449C6F1F9288F000DCC08B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VV9AQTZEBQ;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anthonychan.partnershit.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE449C701F9288F000DCC08B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VV9AQTZEBQ;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.anthonychan.partnershit.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		CECC680A1F9217D700172EBB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -424,8 +771,10 @@
 		};
 		CECC680D1F9217D700172EBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44FECE8C2DB5A026D11CDB15 /* Pods-partnershit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = partnershit/partnershit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VV9AQTZEBQ;
 				INFOPLIST_FILE = partnershit/Info.plist;
@@ -439,8 +788,10 @@
 		};
 		CECC680E1F9217D700172EBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FD5915097D5613897ADEDAA /* Pods-partnershit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = partnershit/partnershit.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VV9AQTZEBQ;
 				INFOPLIST_FILE = partnershit/Info.plist;
@@ -454,6 +805,7 @@
 		};
 		CECC68101F9217D700172EBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D09F505ADF91283E54B70B10 /* Pods-partnershitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +823,7 @@
 		};
 		CECC68111F9217D700172EBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 696BF66EE5CB69F7B3B94F43 /* Pods-partnershitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +841,7 @@
 		};
 		CECC68131F9217D700172EBB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A277438276504AD71EBE64A3 /* Pods-partnershitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +858,7 @@
 		};
 		CECC68141F9217D700172EBB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB087C2EF4CF65FD461F9CE0 /* Pods-partnershitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +876,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE449C6E1F9288F000DCC08B /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE449C6F1F9288F000DCC08B /* Debug */,
+				CE449C701F9288F000DCC08B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CECC67DF1F9217D700172EBB /* Build configuration list for PBXProject "partnershit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
