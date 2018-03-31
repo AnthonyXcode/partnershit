@@ -8,16 +8,36 @@
 
 import UIKit
 import Firebase
+import OneSignal
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        
+        let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false]
+        
+        // Replace 'YOUR_APP_ID' with your OneSignal App ID.
+        OneSignal.initWithLaunchOptions(launchOptions,
+                                        appId: "9427e300-79df-47a4-9063-d713db0609dc",
+                                        handleNotificationAction: nil,
+                                        settings: onesignalInitSettings)
+        
+        OneSignal.inFocusDisplayType = OSNotificationDisplayType.notification;
+        
+        // Recommend moving the below line to prompt for push after informing the user about
+        //   how your app will use them.
+        OneSignal.promptForPushNotifications(userResponse: { accepted in
+            print("User accepted notifications: \(accepted)")
+        })
+        // Sync hashed email if you have a login system or collect it.
+        //   Will be used to reach the user at the most optimal time of day.
+        // OneSignal.syncHashedEmail(userEmail)
+        
         return true
     }
 

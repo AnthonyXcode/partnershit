@@ -1,0 +1,6 @@
+framework module Pods_partnershit_OneSignalNotificationServiceExtension {
+  umbrella header "Pods-partnershit-OneSignalNotificationServiceExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

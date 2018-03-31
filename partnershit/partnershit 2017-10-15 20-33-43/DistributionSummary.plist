@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>partnershit.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>bitcode</key>
+			<true/>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>FFC1BFCD50440E3736A8690683405F9182140814</string>
+				<key>dateExpires</key>
+				<string>23/8/2018</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>bitcode</key>
+					<true/>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>FFC1BFCD50440E3736A8690683405F9182140814</string>
+						<key>dateExpires</key>
+						<string>23/8/2018</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>GTMSessionFetcher.framework</string>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>VV9AQTZEBQ</string>
+						<key>name</key>
+						<string>Chan Yun Yuen</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>bitcode</key>
+					<true/>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>FFC1BFCD50440E3736A8690683405F9182140814</string>
+						<key>dateExpires</key>
+						<string>23/8/2018</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>GoogleToolboxForMac.framework</string>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>VV9AQTZEBQ</string>
+						<key>name</key>
+						<string>Chan Yun Yuen</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>bitcode</key>
+					<true/>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>FFC1BFCD50440E3736A8690683405F9182140814</string>
+						<key>dateExpires</key>
+						<string>23/8/2018</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>leveldb.framework</string>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>VV9AQTZEBQ</string>
+						<key>name</key>
+						<string>Chan Yun Yuen</string>
+					</dict>
+				</dict>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>bitcode</key>
+					<true/>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>FFC1BFCD50440E3736A8690683405F9182140814</string>
+						<key>dateExpires</key>
+						<string>23/8/2018</string>
+						<key>type</key>
+						<string>iOS Distribution</string>
+					</dict>
+					<key>name</key>
+					<string>nanopb.framework</string>
+					<key>symbols</key>
+					<true/>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>VV9AQTZEBQ</string>
+						<key>name</key>
+						<string>Chan Yun Yuen</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>VV9AQTZEBQ.com.anthonychan.partnershit</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>beta-reports-active</key>
+				<true/>
+				<key>com.apple.developer.team-identifier</key>
+				<string>VV9AQTZEBQ</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>partnershit.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>2c07b07d-fdcc-454a-a9ae-83638b78dcdb</string>
+				<key>name</key>
+				<string>iOS Team Store Provisioning Profile: com.anthonychan.partnershit</string>
+			</dict>
+			<key>symbols</key>
+			<true/>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>VV9AQTZEBQ</string>
+				<key>name</key>
+				<string>Chan Yun Yuen</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

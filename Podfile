@@ -9,6 +9,7 @@ target 'partnershit' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'OneSignal', '>= 2.5.2', '< 3.0'
+  pod 'RealmSwift'
   # Pods for partnershit
 
   target 'partnershitTests' do
@@ -20,9 +21,9 @@ target 'partnershit' do
     inherit! :search_paths
     # Pods for testing
   end
+  
+  target 'OneSignalNotificationServiceExtension' do
+      pod 'OneSignal', '>= 2.5.2', '< 3.0'
+  end
 
-end
-
-target 'OneSignalNotificationServiceExtension' do
-    pod 'OneSignal', '>= 2.5.2', '< 3.0'
 end

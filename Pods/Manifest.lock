@@ -43,12 +43,18 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - OneSignal (2.5.6)
+  - Realm (3.0.2):
+    - Realm/Headers (= 3.0.2)
+  - Realm/Headers (3.0.2)
+  - RealmSwift (3.0.2):
+    - Realm (= 3.0.2)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - OneSignal (< 3.0, >= 2.5.2)
+  - RealmSwift
 
 SPEC CHECKSUMS:
   Firebase: 83283761a1ef6dc9846e03d08059f51421afbd65
@@ -62,7 +68,9 @@ SPEC CHECKSUMS:
   leveldb-library: 10fb39c39e243db4af1828441162405bbcec1404
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   OneSignal: 9ec286d9156b86b3975f45d928e70f46c74ef4b7
+  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
+  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
 
-PODFILE CHECKSUM: 3926efe3689f901d96443db29206d159b9e4c8a3
+PODFILE CHECKSUM: 96b72d76a13e7bde2bf3fec031f030123f67c697
 
 COCOAPODS: 1.3.1

@@ -1,0 +1,1128 @@
+2017-10-20 15:57:53 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7fe4a81b5cc0; archive(resolved)='<IDEArchive: 0x7fe4a44382d0>', distributionTask(resolved)='2', distributionMethod(resolved)='<IDEDistributionMethodiOSAppStoreExport: 0x7fe4a8a6a600>', team(resolved)='<IDEProvisioningBasicTeam 0x7fe4a8269e70: teamID: VV9AQTZEBQ, teamName: Chan Yun Yuen>'>
+	Chain (11, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7fe4a81b5cc0; archive = '<IDEArchive: 0x7fe4a44382d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fe4a8a6a600>', team='<IDEProvisioningBasicTeam 0x7fe4a8269e70: teamID: VV9AQTZEBQ, teamName: Chan Yun Yuen>'>
+	<IDEDistributionProcessingPipelineContext: 0x7fe4a822b860; archive = '<IDEArchive: 0x7fe4a44382d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fe4a8a6a600>', team='<IDEProvisioningBasicTeam 0x7fe4a8269e70: teamID: VV9AQTZEBQ, teamName: Chan Yun Yuen>'>
+	<IDEDistributionContext: 0x7fe4a8d2c450; archive = '<IDEArchive: 0x7fe4a44382d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fe4a8a6a600>', team='<IDEProvisioningBasicTeam 0x7fe4a8269e70: teamID: VV9AQTZEBQ, teamName: Chan Yun Yuen>'>
+	<IDEDistributionContext: 0x7fe4a86115a0; archive = '<IDEArchive: 0x7fe4a44382d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fe4a8a6a600>', team='<IDEProvisioningBasicTeam 0x7fe4a8269e70: teamID: VV9AQTZEBQ, teamName: Chan Yun Yuen>'>
+	<IDEDistributionContext: 0x7fe4a87f7a40; archive = '<IDEArchive: 0x7fe4a44382d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fe4a8a6a600>', team='<IDEProvisioningBasicTeam 0x7fe4a8269e70: teamID: VV9AQTZEBQ, teamName: Chan Yun Yuen>'>
+	<IDEDistributionContext: 0x7fe4a8a61100; archive = '<IDEArchive: 0x7fe4a44382d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fe4a8a6a600>', team='<IDEProvisioningBasicTeam 0x7fe4a8269e70: teamID: VV9AQTZEBQ, teamName: Chan Yun Yuen>'>
+	<IDEDistributionContext: 0x7fe4a8d5b560; archive = '<IDEArchive: 0x7fe4a44382d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fe4a8a6a600>', team='<IDEProvisioningBasicTeam 0x7fe4a8269e70: teamID: VV9AQTZEBQ, teamName: Chan Yun Yuen>'>
+	<IDEDistributionContext: 0x7fe4a8af5470; archive = '<IDEArchive: 0x7fe4a44382d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fe4a8a6a600>', team='<IDEProvisioningBasicTeam 0x7fe4a8269e70: teamID: VV9AQTZEBQ, teamName: Chan Yun Yuen>'>
+	<IDEDistributionContext: 0x7fe4a74c9af0; archive = '<IDEArchive: 0x7fe4a44382d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fe4a8a6a600>', team='<IDEProvisioningBasicTeam 0x7fe4a8269e70: teamID: VV9AQTZEBQ, teamName: Chan Yun Yuen>'>
+	<IDEDistributionContext: 0x7fe4a7219da0; archive = '<IDEArchive: 0x7fe4a44382d0>', distributionMethod='<IDEDistributionMethodiOSAppStoreExport: 0x7fe4a8a6a600>', team='(null)'>
+	<IDEDistributionContext: 0x7fe4a8d4fef0; archive = '<IDEArchive: 0x7fe4a44382d0>', distributionMethod='(null)', team='(null)'>
+</IDEDistributionProcessingPipelineContext: 0x7fe4a81b5cc0>
+2017-10-20 15:57:53 +0000  Processing step: IDEDistributionCreateDestRootStep
+2017-10-20 15:57:53 +0000  Processing step: IDEDistributionCopyItemStep
+2017-10-20 15:57:53 +0000  Running /usr/bin/ditto '-V' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app'
+2017-10-20 15:57:53 +0000  >>> Copying /Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app 
+2017-10-20 15:57:53 +0000  copying file ./_CodeSignature/CodeResources ... 
+2017-10-20 15:57:53 +0000  15559 bytes for ./_CodeSignature/CodeResources
+2017-10-20 15:57:53 +0000  copying file ./AppIcon60x60@2x.png ... 
+2017-10-20 15:57:53 +0000  7819 bytes for ./AppIcon60x60@2x.png
+copying file ./AppIcon76x76@2x~ipad.png ... 
+2017-10-20 15:57:53 +0000  9977 bytes for ./AppIcon76x76@2x~ipad.png
+copying file ./archived-expanded-entitlements.xcent ... 
+246 bytes for ./archived-expanded-entitlements.xcent
+2017-10-20 15:57:53 +0000  copying file ./Assets.car ... 
+2017-10-20 15:57:53 +0000  464120 bytes for ./Assets.car
+2017-10-20 15:57:53 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2017-10-20 15:57:53 +0000  2926 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2017-10-20 15:57:53 +0000  258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+2017-10-20 15:57:53 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2017-10-20 15:57:53 +0000  832 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+2017-10-20 15:57:53 +0000  copying file ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2017-10-20 15:57:53 +0000  5371 bytes for ./Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+copying file ./Base.lproj/Main.storyboardc/DetailView.nib ... 
+2017-10-20 15:57:53 +0000  1034 bytes for ./Base.lproj/Main.storyboardc/DetailView.nib
+copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+2017-10-20 15:57:53 +0000  284 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+copying file ./Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib ... 
+2017-10-20 15:57:53 +0000  983 bytes for ./Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
+copying file ./Base.lproj/Main.storyboardc/ULX-XZ-qiE-view-jbp-39-L1M.nib ... 
+2017-10-20 15:57:53 +0000  7121 bytes for ./Base.lproj/Main.storyboardc/ULX-XZ-qiE-view-jbp-39-L1M.nib
+2017-10-20 15:57:53 +0000  copying file ./embedded.mobileprovision ... 
+2017-10-20 15:57:53 +0000  7656 bytes for ./embedded.mobileprovision
+2017-10-20 15:57:53 +0000  copying file ./Frameworks/GoogleToolboxForMac.framework/_CodeSignature/CodeResources ... 
+2017-10-20 15:57:53 +0000  2202 bytes for ./Frameworks/GoogleToolboxForMac.framework/_CodeSignature/CodeResources
+2017-10-20 15:57:53 +0000  copying file ./Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac ... 
+2017-10-20 15:57:53 +0000  220848 bytes for ./Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac
+2017-10-20 15:57:53 +0000  copying file ./Frameworks/GoogleToolboxForMac.framework/Info.plist ... 
+2017-10-20 15:57:53 +0000  762 bytes for ./Frameworks/GoogleToolboxForMac.framework/Info.plist
+2017-10-20 15:57:53 +0000  copying file ./Frameworks/GTMSessionFetcher.framework/_CodeSignature/CodeResources ... 
+2017-10-20 15:57:53 +0000  2202 bytes for ./Frameworks/GTMSessionFetcher.framework/_CodeSignature/CodeResources
+2017-10-20 15:57:53 +0000  copying file ./Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher ... 
+2017-10-20 15:57:53 +0000  1080176 bytes for ./Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher
+copying file ./Frameworks/GTMSessionFetcher.framework/Info.plist ... 
+2017-10-20 15:57:53 +0000  759 bytes for ./Frameworks/GTMSessionFetcher.framework/Info.plist
+2017-10-20 15:57:53 +0000  copying file ./Frameworks/leveldb.framework/_CodeSignature/CodeResources ... 
+2017-10-20 15:57:53 +0000  2202 bytes for ./Frameworks/leveldb.framework/_CodeSignature/CodeResources
+copying file ./Frameworks/leveldb.framework/Info.plist ... 
+2017-10-20 15:57:53 +0000  737 bytes for ./Frameworks/leveldb.framework/Info.plist
+copying file ./Frameworks/leveldb.framework/leveldb ... 
+2017-10-20 15:57:53 +0000  2143712 bytes for ./Frameworks/leveldb.framework/leveldb
+2017-10-20 15:57:53 +0000  copying file ./Frameworks/libswiftCore.dylib ... 
+2017-10-20 15:57:53 +0000  68656912 bytes for ./Frameworks/libswiftCore.dylib
+copying file ./Frameworks/libswiftCoreFoundation.dylib ... 
+2017-10-20 15:57:53 +0000  257664 bytes for ./Frameworks/libswiftCoreFoundation.dylib
+copying file ./Frameworks/libswiftCoreGraphics.dylib ... 
+1268800 bytes for ./Frameworks/libswiftCoreGraphics.dylib
+copying file ./Frameworks/libswiftCoreImage.dylib ... 
+258224 bytes for ./Frameworks/libswiftCoreImage.dylib
+copying file ./Frameworks/libswiftDarwin.dylib ... 
+599232 bytes for ./Frameworks/libswiftDarwin.dylib
+copying file ./Frameworks/libswiftDispatch.dylib ... 
+2017-10-20 15:57:53 +0000  2440704 bytes for ./Frameworks/libswiftDispatch.dylib
+copying file ./Frameworks/libswiftFoundation.dylib ... 
+2017-10-20 15:57:53 +0000  28714192 bytes for ./Frameworks/libswiftFoundation.dylib
+copying file ./Frameworks/libswiftMetal.dylib ... 
+2017-10-20 15:57:53 +0000  399344 bytes for ./Frameworks/libswiftMetal.dylib
+copying file ./Frameworks/libswiftObjectiveC.dylib ... 
+505744 bytes for ./Frameworks/libswiftObjectiveC.dylib
+copying file ./Frameworks/libswiftos.dylib ... 
+446352 bytes for ./Frameworks/libswiftos.dylib
+copying file ./Frameworks/libswiftQuartzCore.dylib ... 
+310944 bytes for ./Frameworks/libswiftQuartzCore.dylib
+copying file ./Frameworks/libswiftUIKit.dylib ... 
+789152 bytes for ./Frameworks/libswiftUIKit.dylib
+copying file ./Frameworks/nanopb.framework/_CodeSignature/CodeResources ... 
+2202 bytes for ./Frameworks/nanopb.framework/_CodeSignature/CodeResources
+copying file ./Frameworks/nanopb.framework/Info.plist ... 
+734 bytes for ./Frameworks/nanopb.framework/Info.plist
+copying file ./Frameworks/nanopb.framework/nanopb ... 
+216928 bytes for ./Frameworks/nanopb.framework/nanopb
+copying file ./GoogleService-Info.plist ... 
+894 bytes for ./GoogleService-Info.plist
+copying file ./Info.plist ... 
+2017-10-20 15:57:53 +0000  1392 bytes for ./Info.plist
+copying file ./partnershit ... 
+2017-10-20 15:57:53 +0000  10800256 bytes for ./partnershit
+copying file ./PkgInfo ... 
+2017-10-20 15:57:53 +0000  /usr/bin/ditto exited with 0
+2017-10-20 15:57:53 +0000  8 bytes for ./PkgInfo
+copying file ./StatementCellTableViewCell.nib ... 
+3658 bytes for ./StatementCellTableViewCell.nib
+2017-10-20 15:57:53 +0000  Processing step: IDEDistributionEmbedProfileStep
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a760eef0 'org.cocoapods.GTMSessionFetcher' '<DVTFilePath:0x7fe4a84aa620:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/GTMSessionFetcher.framework'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a852d650 'org.cocoapods.GoogleToolboxForMac' '<DVTFilePath:0x7fe4a8467a20:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/GoogleToolboxForMac.framework'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a748cd10 'org.cocoapods.leveldb' '<DVTFilePath:0x7fe4a8471e50:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/leveldb.framework'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a86da6d0 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7fe4a8123640:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCore.dylib'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a758ce90 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7fe4a8578300:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreFoundation.dylib'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a8d60a60 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7fe4a85f0920:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreGraphics.dylib'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a40ae530 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7fe4a85491f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreImage.dylib'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a87ca720 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7fe4a8578290:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftDarwin.dylib'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a879d750 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7fe4a75b0790:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftDispatch.dylib'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a85aec30 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7fe4a75d8550:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftFoundation.dylib'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a86de2b0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7fe4a755f6f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftMetal.dylib'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a852a410 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7fe4a75e5fa0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftObjectiveC.dylib'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a7580fd0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7fe4a75877f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftQuartzCore.dylib'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a8aa5530 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7fe4a851fd70:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftUIKit.dylib'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a8d578e0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7fe4a72ce8e0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftos.dylib'>'>
+2017-10-20 15:57:53 +0000  Skipping profile for item: <IDEDistributionItem: 0x7fe4a8d32ca0 'org.cocoapods.nanopb' '<DVTFilePath:0x7fe4a84ef010:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/nanopb.framework'>'>
+2017-10-20 15:57:53 +0000  Processing step: IDEDistributionItemRemovalStep
+2017-10-20 15:57:53 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2017-10-20 15:57:53 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2017-10-20 15:57:53 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2017-10-20 15:57:53 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2017-10-20 15:57:53 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2017-10-20 15:57:54 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2017-10-20 15:57:54 +0000  Running /usr/bin/ditto '-V' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/BCSymbolMaps/9BE03905-55FC-3FD0-9744-7CB02E86F523.bcsymbolmap' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/BCSymbolMaps/9BE03905-55FC-3FD0-9744-7CB02E86F523.bcsymbolmap'
+2017-10-20 15:57:54 +0000  >>> Copying /Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/BCSymbolMaps/9BE03905-55FC-3FD0-9744-7CB02E86F523.bcsymbolmap 
+2017-10-20 15:57:54 +0000  copying file ./9BE03905-55FC-3FD0-9744-7CB02E86F523.bcsymbolmap ... 
+2017-10-20 15:57:54 +0000  60851 bytes for ./9BE03905-55FC-3FD0-9744-7CB02E86F523.bcsymbolmap
+2017-10-20 15:57:54 +0000  /usr/bin/ditto exited with 0
+2017-10-20 15:57:54 +0000  Running /usr/bin/ditto '-V' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/BCSymbolMaps/48E33532-6739-3D38-A318-8A519B297957.bcsymbolmap' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/BCSymbolMaps/48E33532-6739-3D38-A318-8A519B297957.bcsymbolmap'
+2017-10-20 15:57:54 +0000  >>> Copying /Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/BCSymbolMaps/48E33532-6739-3D38-A318-8A519B297957.bcsymbolmap 
+2017-10-20 15:57:54 +0000  copying file ./48E33532-6739-3D38-A318-8A519B297957.bcsymbolmap ... 
+2017-10-20 15:57:54 +0000  12283 bytes for ./48E33532-6739-3D38-A318-8A519B297957.bcsymbolmap
+2017-10-20 15:57:54 +0000  /usr/bin/ditto exited with 0
+2017-10-20 15:57:54 +0000  Running /usr/bin/ditto '-V' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/BCSymbolMaps/11A8EFDD-5293-30A1-8F1F-979F2370255F.bcsymbolmap' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/BCSymbolMaps/11A8EFDD-5293-30A1-8F1F-979F2370255F.bcsymbolmap'
+2017-10-20 15:57:54 +0000  >>> Copying /Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/BCSymbolMaps/11A8EFDD-5293-30A1-8F1F-979F2370255F.bcsymbolmap 
+2017-10-20 15:57:54 +0000  copying file ./11A8EFDD-5293-30A1-8F1F-979F2370255F.bcsymbolmap ... 
+2017-10-20 15:57:54 +0000  65858 bytes for ./11A8EFDD-5293-30A1-8F1F-979F2370255F.bcsymbolmap
+2017-10-20 15:57:54 +0000  /usr/bin/ditto exited with 0
+2017-10-20 15:57:54 +0000  Running /usr/bin/ditto '-V' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/BCSymbolMaps/2290E94F-A0F7-3686-AC69-423132144336.bcsymbolmap' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/BCSymbolMaps/2290E94F-A0F7-3686-AC69-423132144336.bcsymbolmap'
+2017-10-20 15:57:54 +0000  >>> Copying /Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/BCSymbolMaps/2290E94F-A0F7-3686-AC69-423132144336.bcsymbolmap 
+2017-10-20 15:57:54 +0000  copying file ./2290E94F-A0F7-3686-AC69-423132144336.bcsymbolmap ... 
+2017-10-20 15:57:54 +0000  11028 bytes for ./2290E94F-A0F7-3686-AC69-423132144336.bcsymbolmap
+2017-10-20 15:57:54 +0000  /usr/bin/ditto exited with 0
+2017-10-20 15:57:54 +0000  Running /usr/bin/ditto '-V' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/BCSymbolMaps/F3006FAB-FC70-3886-8C39-8BA16897AC9E.bcsymbolmap' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/BCSymbolMaps/F3006FAB-FC70-3886-8C39-8BA16897AC9E.bcsymbolmap'
+2017-10-20 15:57:54 +0000  >>> Copying /Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/BCSymbolMaps/F3006FAB-FC70-3886-8C39-8BA16897AC9E.bcsymbolmap 
+2017-10-20 15:57:54 +0000  copying file ./F3006FAB-FC70-3886-8C39-8BA16897AC9E.bcsymbolmap ... 
+2017-10-20 15:57:54 +0000  472778 bytes for ./F3006FAB-FC70-3886-8C39-8BA16897AC9E.bcsymbolmap
+2017-10-20 15:57:54 +0000  /usr/bin/ditto exited with 0
+2017-10-20 15:57:54 +0000  Processing step: IDEDistributionSymbolsStep
+2017-10-20 15:57:54 +0000  Excluding symbols for GTMSessionFetcher.framework
+2017-10-20 15:57:54 +0000  Excluding symbols for GoogleToolboxForMac.framework
+2017-10-20 15:57:54 +0000  Excluding symbols for leveldb.framework
+2017-10-20 15:57:54 +0000  Processing symbols for libswiftCore.dylib
+2017-10-20 15:57:54 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCore.dylib' '--link-dest' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:54 +0000  building file list ... 
+2017-10-20 15:57:54 +0000   0 files...2017-10-20 15:57:54 +0000  1 file to consider
+2017-10-20 15:57:54 +0000  
+2017-10-20 15:57:54 +0000  sent 89 bytes  received 20 bytes  218.00 bytes/sec
+total size is 65.48M  speedup is 629879.93
+2017-10-20 15:57:54 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:54 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '--link-dest' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:54 +0000  building file list ... 
+2017-10-20 15:57:54 +0000   0 files...2017-10-20 15:57:54 +0000  37 files to consider
+2017-10-20 15:57:54 +0000  ./
+2017-10-20 15:57:54 +0000  GTMSessionFetcher.framework.dSYM/
+GTMSessionFetcher.framework.dSYM/Contents/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/DWARF/
+GoogleToolboxForMac.framework.dSYM/
+GoogleToolboxForMac.framework.dSYM/Contents/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/
+2017-10-20 15:57:54 +0000  GoogleToolboxForMac.framework.dSYM/Contents/Resources/DWARF/
+OneSignalNotificationServiceExtension.appex.dSYM/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/DWARF/
+leveldb.framework.dSYM/
+leveldb.framework.dSYM/Contents/
+leveldb.framework.dSYM/Contents/Resources/
+leveldb.framework.dSYM/Contents/Resources/DWARF/
+nanopb.framework.dSYM/
+nanopb.framework.dSYM/Contents/
+nanopb.framework.dSYM/Contents/Resources/
+nanopb.framework.dSYM/Contents/Resources/DWARF/
+partnershit.app.dSYM/
+partnershit.app.dSYM/Contents/
+partnershit.app.dSYM/Contents/Resources/
+partnershit.app.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:54 +0000  
+2017-10-20 15:57:54 +0000  sent 1.27K bytes  received 170 bytes  2.88K bytes/sec
+total size is 13.42M  speedup is 9538.99
+2017-10-20 15:57:54 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:54 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Symbols' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCore.dylib'
+2017-10-20 15:57:54 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCore.dylib [armv7, 0.384139 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCore.dylib [armv7s, 0.384139 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCore.dylib [arm64, 0.384139 seconds]:
+2017-10-20 15:57:55 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-20 15:57:55 +0000  Processing symbols for libswiftCoreFoundation.dylib
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCoreFoundation.dylib' '--link-dest' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  1 file to consider
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 99 bytes  received 20 bytes  238.00 bytes/sec
+total size is 251.62K  speedup is 2165.24
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '--link-dest' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  37 files to consider
+2017-10-20 15:57:55 +0000  ./
+2017-10-20 15:57:55 +0000  GTMSessionFetcher.framework.dSYM/
+GTMSessionFetcher.framework.dSYM/Contents/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/DWARF/
+GoogleToolboxForMac.framework.dSYM/
+GoogleToolboxForMac.framework.dSYM/Contents/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/DWARF/
+OneSignalNotificationServiceExtension.appex.dSYM/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/
+2017-10-20 15:57:55 +0000  OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/DWARF/
+leveldb.framework.dSYM/
+leveldb.framework.dSYM/Contents/
+leveldb.framework.dSYM/Contents/Resources/
+leveldb.framework.dSYM/Contents/Resources/DWARF/
+nanopb.framework.dSYM/
+nanopb.framework.dSYM/Contents/
+nanopb.framework.dSYM/Contents/Resources/
+nanopb.framework.dSYM/Contents/Resources/DWARF/
+partnershit.app.dSYM/
+partnershit.app.dSYM/Contents/
+partnershit.app.dSYM/Contents/Resources/
+partnershit.app.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 1.34K bytes  received 242 bytes  3.16K bytes/sec
+total size is 13.42M  speedup is 8690.55
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Symbols' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCoreFoundation.dylib'
+2017-10-20 15:57:55 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCoreFoundation.dylib [armv7, 0.001230 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCoreFoundation.dylib [armv7s, 0.001230 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCoreFoundation.dylib [arm64, 0.001230 seconds]:
+2017-10-20 15:57:55 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-20 15:57:55 +0000  Processing symbols for libswiftCoreGraphics.dylib
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCoreGraphics.dylib' '--link-dest' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  1 file to consider
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 97 bytes  received 20 bytes  234.00 bytes/sec
+total size is 1.21M  speedup is 10844.44
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '--link-dest' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  37 files to consider
+2017-10-20 15:57:55 +0000  ./
+2017-10-20 15:57:55 +0000  GTMSessionFetcher.framework.dSYM/
+GTMSessionFetcher.framework.dSYM/Contents/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/DWARF/
+GoogleToolboxForMac.framework.dSYM/
+GoogleToolboxForMac.framework.dSYM/Contents/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/DWARF/
+OneSignalNotificationServiceExtension.appex.dSYM/
+2017-10-20 15:57:55 +0000  OneSignalNotificationServiceExtension.appex.dSYM/Contents/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/DWARF/
+leveldb.framework.dSYM/
+leveldb.framework.dSYM/Contents/
+leveldb.framework.dSYM/Contents/Resources/
+leveldb.framework.dSYM/Contents/Resources/DWARF/
+nanopb.framework.dSYM/
+nanopb.framework.dSYM/Contents/
+nanopb.framework.dSYM/Contents/Resources/
+nanopb.framework.dSYM/Contents/Resources/DWARF/
+partnershit.app.dSYM/
+partnershit.app.dSYM/Contents/
+partnershit.app.dSYM/Contents/Resources/
+partnershit.app.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 1.34K bytes  received 242 bytes  3.16K bytes/sec
+total size is 13.42M  speedup is 8690.55
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Symbols' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCoreGraphics.dylib'
+2017-10-20 15:57:55 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCoreGraphics.dylib [armv7, 0.007797 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCoreGraphics.dylib [armv7s, 0.007797 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCoreGraphics.dylib [arm64, 0.007797 seconds]:
+2017-10-20 15:57:55 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-20 15:57:55 +0000  Processing symbols for libswiftCoreImage.dylib
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCoreImage.dylib' '--link-dest' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  1 file to consider
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 94 bytes  received 20 bytes  228.00 bytes/sec
+total size is 252.17K  speedup is 2265.12
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '--link-dest' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  37 files to consider
+2017-10-20 15:57:55 +0000  ./
+2017-10-20 15:57:55 +0000  GTMSessionFetcher.framework.dSYM/
+GTMSessionFetcher.framework.dSYM/Contents/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/DWARF/
+GoogleToolboxForMac.framework.dSYM/
+GoogleToolboxForMac.framework.dSYM/Contents/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/DWARF/
+OneSignalNotificationServiceExtension.appex.dSYM/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  leveldb.framework.dSYM/
+leveldb.framework.dSYM/Contents/
+leveldb.framework.dSYM/Contents/Resources/
+leveldb.framework.dSYM/Contents/Resources/DWARF/
+nanopb.framework.dSYM/
+nanopb.framework.dSYM/Contents/
+nanopb.framework.dSYM/Contents/Resources/
+nanopb.framework.dSYM/Contents/Resources/DWARF/
+partnershit.app.dSYM/
+partnershit.app.dSYM/Contents/
+partnershit.app.dSYM/Contents/Resources/
+partnershit.app.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 1.34K bytes  received 242 bytes  3.16K bytes/sec
+total size is 13.42M  speedup is 8690.55
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Symbols' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCoreImage.dylib'
+2017-10-20 15:57:55 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCoreImage.dylib [armv7, 0.001025 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCoreImage.dylib [armv7s, 0.001025 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftCoreImage.dylib [arm64, 0.001025 seconds]:
+2017-10-20 15:57:55 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-20 15:57:55 +0000  Processing symbols for libswiftDarwin.dylib
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftDarwin.dylib' '--link-dest' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  1 file to consider
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 91 bytes  received 20 bytes  222.00 bytes/sec
+total size is 585.19K  speedup is 5398.49
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '--link-dest' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  37 files to consider
+2017-10-20 15:57:55 +0000  ./
+2017-10-20 15:57:55 +0000  GTMSessionFetcher.framework.dSYM/
+GTMSessionFetcher.framework.dSYM/Contents/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/DWARF/
+GoogleToolboxForMac.framework.dSYM/
+GoogleToolboxForMac.framework.dSYM/Contents/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/DWARF/
+OneSignalNotificationServiceExtension.appex.dSYM/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/
+2017-10-20 15:57:55 +0000  OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/DWARF/
+leveldb.framework.dSYM/
+leveldb.framework.dSYM/Contents/
+leveldb.framework.dSYM/Contents/Resources/
+leveldb.framework.dSYM/Contents/Resources/DWARF/
+nanopb.framework.dSYM/
+nanopb.framework.dSYM/Contents/
+nanopb.framework.dSYM/Contents/Resources/
+nanopb.framework.dSYM/Contents/Resources/DWARF/
+partnershit.app.dSYM/
+partnershit.app.dSYM/Contents/
+partnershit.app.dSYM/Contents/Resources/
+partnershit.app.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 1.34K bytes  received 242 bytes  3.16K bytes/sec
+total size is 13.42M  speedup is 8690.55
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Symbols' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftDarwin.dylib'
+2017-10-20 15:57:55 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftDarwin.dylib [armv7, 0.004260 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftDarwin.dylib [armv7s, 0.004260 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftDarwin.dylib [arm64, 0.004260 seconds]:
+2017-10-20 15:57:55 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-20 15:57:55 +0000  Processing symbols for libswiftDispatch.dylib
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftDispatch.dylib' '--link-dest' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  1 file to consider
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 93 bytes  received 20 bytes  226.00 bytes/sec
+total size is 2.33M  speedup is 21599.15
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '--link-dest' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  37 files to consider
+2017-10-20 15:57:55 +0000  ./
+2017-10-20 15:57:55 +0000  GTMSessionFetcher.framework.dSYM/
+GTMSessionFetcher.framework.dSYM/Contents/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/DWARF/
+GoogleToolboxForMac.framework.dSYM/
+GoogleToolboxForMac.framework.dSYM/Contents/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/DWARF/
+OneSignalNotificationServiceExtension.appex.dSYM/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/DWARF/
+leveldb.framework.dSYM/
+leveldb.framework.dSYM/Contents/
+2017-10-20 15:57:55 +0000  leveldb.framework.dSYM/Contents/Resources/
+leveldb.framework.dSYM/Contents/Resources/DWARF/
+nanopb.framework.dSYM/
+nanopb.framework.dSYM/Contents/
+nanopb.framework.dSYM/Contents/Resources/
+nanopb.framework.dSYM/Contents/Resources/DWARF/
+partnershit.app.dSYM/
+partnershit.app.dSYM/Contents/
+partnershit.app.dSYM/Contents/Resources/
+partnershit.app.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 1.34K bytes  received 242 bytes  3.16K bytes/sec
+total size is 13.42M  speedup is 8690.55
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Symbols' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftDispatch.dylib'
+2017-10-20 15:57:55 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftDispatch.dylib [armv7, 0.017918 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftDispatch.dylib [armv7s, 0.017918 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftDispatch.dylib [arm64, 0.017918 seconds]:
+2017-10-20 15:57:55 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-20 15:57:55 +0000  Processing symbols for libswiftFoundation.dylib
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftFoundation.dylib' '--link-dest' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  1 file to consider
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 95 bytes  received 20 bytes  230.00 bytes/sec
+total size is 27.38M  speedup is 249688.63
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '--link-dest' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  37 files to consider
+2017-10-20 15:57:55 +0000  ./
+2017-10-20 15:57:55 +0000  GTMSessionFetcher.framework.dSYM/
+GTMSessionFetcher.framework.dSYM/Contents/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/DWARF/
+GoogleToolboxForMac.framework.dSYM/
+GoogleToolboxForMac.framework.dSYM/Contents/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/DWARF/
+OneSignalNotificationServiceExtension.appex.dSYM/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/DWARF/
+leveldb.framework.dSYM/
+leveldb.framework.dSYM/Contents/
+leveldb.framework.dSYM/Contents/Resources/
+leveldb.framework.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  nanopb.framework.dSYM/
+nanopb.framework.dSYM/Contents/
+nanopb.framework.dSYM/Contents/Resources/
+nanopb.framework.dSYM/Contents/Resources/DWARF/
+partnershit.app.dSYM/
+partnershit.app.dSYM/Contents/
+partnershit.app.dSYM/Contents/Resources/
+partnershit.app.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 1.34K bytes  received 242 bytes  3.16K bytes/sec
+total size is 13.42M  speedup is 8690.55
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Symbols' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftFoundation.dylib'
+2017-10-20 15:57:55 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftFoundation.dylib [armv7, 0.122332 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftFoundation.dylib [armv7s, 0.122332 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftFoundation.dylib [arm64, 0.122332 seconds]:
+2017-10-20 15:57:55 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-20 15:57:55 +0000  Processing symbols for libswiftMetal.dylib
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftMetal.dylib' '--link-dest' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  1 file to consider
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 90 bytes  received 20 bytes  220.00 bytes/sec
+total size is 389.98K  speedup is 3630.40
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '--link-dest' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  37 files to consider
+2017-10-20 15:57:55 +0000  ./
+2017-10-20 15:57:55 +0000  GTMSessionFetcher.framework.dSYM/
+GTMSessionFetcher.framework.dSYM/Contents/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/DWARF/
+GoogleToolboxForMac.framework.dSYM/
+GoogleToolboxForMac.framework.dSYM/Contents/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/DWARF/
+OneSignalNotificationServiceExtension.appex.dSYM/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  leveldb.framework.dSYM/
+leveldb.framework.dSYM/Contents/
+leveldb.framework.dSYM/Contents/Resources/
+leveldb.framework.dSYM/Contents/Resources/DWARF/
+nanopb.framework.dSYM/
+nanopb.framework.dSYM/Contents/
+nanopb.framework.dSYM/Contents/Resources/
+nanopb.framework.dSYM/Contents/Resources/DWARF/
+partnershit.app.dSYM/
+partnershit.app.dSYM/Contents/
+partnershit.app.dSYM/Contents/Resources/
+partnershit.app.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 1.34K bytes  received 242 bytes  3.16K bytes/sec
+total size is 13.42M  speedup is 8690.55
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Symbols' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftMetal.dylib'
+2017-10-20 15:57:55 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftMetal.dylib [armv7, 0.001985 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftMetal.dylib [armv7s, 0.001985 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftMetal.dylib [arm64, 0.001985 seconds]:
+2017-10-20 15:57:55 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-20 15:57:55 +0000  Processing symbols for libswiftObjectiveC.dylib
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftObjectiveC.dylib' '--link-dest' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  1 file to consider
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 95 bytes  received 20 bytes  230.00 bytes/sec
+total size is 493.89K  speedup is 4397.77
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '--link-dest' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  37 files to consider
+2017-10-20 15:57:55 +0000  ./
+2017-10-20 15:57:55 +0000  GTMSessionFetcher.framework.dSYM/
+GTMSessionFetcher.framework.dSYM/Contents/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/DWARF/
+GoogleToolboxForMac.framework.dSYM/
+GoogleToolboxForMac.framework.dSYM/Contents/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/DWARF/
+OneSignalNotificationServiceExtension.appex.dSYM/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  leveldb.framework.dSYM/
+leveldb.framework.dSYM/Contents/
+leveldb.framework.dSYM/Contents/Resources/
+leveldb.framework.dSYM/Contents/Resources/DWARF/
+nanopb.framework.dSYM/
+nanopb.framework.dSYM/Contents/
+nanopb.framework.dSYM/Contents/Resources/
+nanopb.framework.dSYM/Contents/Resources/DWARF/
+partnershit.app.dSYM/
+partnershit.app.dSYM/Contents/
+partnershit.app.dSYM/Contents/Resources/
+partnershit.app.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 1.34K bytes  received 242 bytes  3.16K bytes/sec
+total size is 13.42M  speedup is 8690.55
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Symbols' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftObjectiveC.dylib'
+2017-10-20 15:57:55 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftObjectiveC.dylib [armv7, 0.002802 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftObjectiveC.dylib [armv7s, 0.002802 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftObjectiveC.dylib [arm64, 0.002802 seconds]:
+2017-10-20 15:57:55 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-20 15:57:55 +0000  Processing symbols for libswiftQuartzCore.dylib
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftQuartzCore.dylib' '--link-dest' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  1 file to consider
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 95 bytes  received 20 bytes  230.00 bytes/sec
+total size is 303.66K  speedup is 2703.86
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '--link-dest' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  37 files to consider
+2017-10-20 15:57:55 +0000  ./
+2017-10-20 15:57:55 +0000  GTMSessionFetcher.framework.dSYM/
+GTMSessionFetcher.framework.dSYM/Contents/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/DWARF/
+GoogleToolboxForMac.framework.dSYM/
+GoogleToolboxForMac.framework.dSYM/Contents/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/DWARF/
+OneSignalNotificationServiceExtension.appex.dSYM/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/
+2017-10-20 15:57:55 +0000  OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/DWARF/
+leveldb.framework.dSYM/
+leveldb.framework.dSYM/Contents/
+leveldb.framework.dSYM/Contents/Resources/
+leveldb.framework.dSYM/Contents/Resources/DWARF/
+nanopb.framework.dSYM/
+nanopb.framework.dSYM/Contents/
+nanopb.framework.dSYM/Contents/Resources/
+nanopb.framework.dSYM/Contents/Resources/DWARF/
+partnershit.app.dSYM/
+partnershit.app.dSYM/Contents/
+partnershit.app.dSYM/Contents/Resources/
+partnershit.app.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 1.34K bytes  received 242 bytes  3.16K bytes/sec
+total size is 13.42M  speedup is 8690.55
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Symbols' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftQuartzCore.dylib'
+2017-10-20 15:57:55 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftQuartzCore.dylib [armv7, 0.001593 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftQuartzCore.dylib [armv7s, 0.001593 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftQuartzCore.dylib [arm64, 0.001593 seconds]:
+2017-10-20 15:57:55 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-20 15:57:55 +0000  Processing symbols for libswiftUIKit.dylib
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftUIKit.dylib' '--link-dest' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  1 file to consider
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 90 bytes  received 20 bytes  220.00 bytes/sec
+total size is 770.66K  speedup is 7174.11
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '--link-dest' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  37 files to consider
+2017-10-20 15:57:55 +0000  ./
+2017-10-20 15:57:55 +0000  GTMSessionFetcher.framework.dSYM/
+GTMSessionFetcher.framework.dSYM/Contents/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/DWARF/
+GoogleToolboxForMac.framework.dSYM/
+GoogleToolboxForMac.framework.dSYM/Contents/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/DWARF/
+OneSignalNotificationServiceExtension.appex.dSYM/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/DWARF/
+leveldb.framework.dSYM/
+2017-10-20 15:57:55 +0000  leveldb.framework.dSYM/Contents/
+leveldb.framework.dSYM/Contents/Resources/
+leveldb.framework.dSYM/Contents/Resources/DWARF/
+nanopb.framework.dSYM/
+nanopb.framework.dSYM/Contents/
+nanopb.framework.dSYM/Contents/Resources/
+nanopb.framework.dSYM/Contents/Resources/DWARF/
+partnershit.app.dSYM/
+partnershit.app.dSYM/Contents/
+partnershit.app.dSYM/Contents/Resources/
+partnershit.app.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 1.34K bytes  received 242 bytes  3.16K bytes/sec
+total size is 13.42M  speedup is 8690.55
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Symbols' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftUIKit.dylib'
+2017-10-20 15:57:55 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftUIKit.dylib [armv7, 0.005051 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftUIKit.dylib [armv7s, 0.005051 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftUIKit.dylib [arm64, 0.005051 seconds]:
+2017-10-20 15:57:55 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-20 15:57:55 +0000  Processing symbols for libswiftos.dylib
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftos.dylib' '--link-dest' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  1 file to consider
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 87 bytes  received 20 bytes  214.00 bytes/sec
+total size is 435.89K  speedup is 4171.51
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /usr/bin/rsync '-8aPhhE' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '--link-dest' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/dSYMs/' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p'
+2017-10-20 15:57:55 +0000  building file list ... 
+2017-10-20 15:57:55 +0000   0 files...2017-10-20 15:57:55 +0000  37 files to consider
+2017-10-20 15:57:55 +0000  ./
+2017-10-20 15:57:55 +0000  GTMSessionFetcher.framework.dSYM/
+GTMSessionFetcher.framework.dSYM/Contents/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/
+GTMSessionFetcher.framework.dSYM/Contents/Resources/DWARF/
+GoogleToolboxForMac.framework.dSYM/
+GoogleToolboxForMac.framework.dSYM/Contents/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/
+GoogleToolboxForMac.framework.dSYM/Contents/Resources/DWARF/
+OneSignalNotificationServiceExtension.appex.dSYM/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/
+2017-10-20 15:57:55 +0000  OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/
+OneSignalNotificationServiceExtension.appex.dSYM/Contents/Resources/DWARF/
+leveldb.framework.dSYM/
+leveldb.framework.dSYM/Contents/
+leveldb.framework.dSYM/Contents/Resources/
+leveldb.framework.dSYM/Contents/Resources/DWARF/
+nanopb.framework.dSYM/
+nanopb.framework.dSYM/Contents/
+nanopb.framework.dSYM/Contents/Resources/
+nanopb.framework.dSYM/Contents/Resources/DWARF/
+partnershit.app.dSYM/
+partnershit.app.dSYM/Contents/
+partnershit.app.dSYM/Contents/Resources/
+partnershit.app.dSYM/Contents/Resources/DWARF/
+2017-10-20 15:57:55 +0000  
+2017-10-20 15:57:55 +0000  sent 1.34K bytes  received 242 bytes  3.16K bytes/sec
+total size is 13.42M  speedup is 8690.55
+2017-10-20 15:57:55 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:57:55 +0000  Running /Applications/Xcode.app/Contents/Developer/usr/bin/symbols '-noTextInSOD' '-noDaemon' '-arch' 'all' '-symbolsPackageDir' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Symbols' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftos.dylib'
+2017-10-20 15:57:56 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftos.dylib [armv7, 0.001981 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftos.dylib [armv7s, 0.001981 seconds]:
+/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/libswiftos.dylib [arm64, 0.001981 seconds]:
+2017-10-20 15:57:56 +0000  /Applications/Xcode.app/Contents/Developer/usr/bin/symbols exited with 0
+2017-10-20 15:57:56 +0000  Excluding symbols for nanopb.framework
+2017-10-20 15:57:56 +0000  Excluding symbols for partnershit.app
+2017-10-20 15:57:56 +0000  Processing step: IDEDistributionCopyAppleProvidedContentStep
+2017-10-20 15:57:56 +0000  Running /usr/bin/ditto '-V' '/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/SwiftSupport' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/SwiftSupport'
+2017-10-20 15:57:56 +0000  >>> Copying /Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/SwiftSupport 
+2017-10-20 15:57:56 +0000  copying file ./iphoneos/libswiftCore.dylib ... 
+2017-10-20 15:57:56 +0000  99817136 bytes for ./iphoneos/libswiftCore.dylib
+copying file ./iphoneos/libswiftCoreFoundation.dylib ... 
+2017-10-20 15:57:56 +0000  287502 bytes for ./iphoneos/libswiftCoreFoundation.dylib
+copying file ./iphoneos/libswiftCoreGraphics.dylib ... 
+2017-10-20 15:57:56 +0000  1736842 bytes for ./iphoneos/libswiftCoreGraphics.dylib
+copying file ./iphoneos/libswiftCoreImage.dylib ... 
+2017-10-20 15:57:56 +0000  300323 bytes for ./iphoneos/libswiftCoreImage.dylib
+copying file ./iphoneos/libswiftDarwin.dylib ... 
+2017-10-20 15:57:56 +0000  790258 bytes for ./iphoneos/libswiftDarwin.dylib
+copying file ./iphoneos/libswiftDispatch.dylib ... 
+2017-10-20 15:57:56 +0000  3397815 bytes for ./iphoneos/libswiftDispatch.dylib
+copying file ./iphoneos/libswiftFoundation.dylib ... 
+2017-10-20 15:57:56 +0000  42134051 bytes for ./iphoneos/libswiftFoundation.dylib
+copying file ./iphoneos/libswiftMetal.dylib ... 
+2017-10-20 15:57:56 +0000  503991 bytes for ./iphoneos/libswiftMetal.dylib
+copying file ./iphoneos/libswiftObjectiveC.dylib ... 
+681182 bytes for ./iphoneos/libswiftObjectiveC.dylib
+copying file ./iphoneos/libswiftos.dylib ... 
+589632 bytes for ./iphoneos/libswiftos.dylib
+copying file ./iphoneos/libswiftQuartzCore.dylib ... 
+370110 bytes for ./iphoneos/libswiftQuartzCore.dylib
+copying file ./iphoneos/libswiftUIKit.dylib ... 
+1117164 bytes for ./iphoneos/libswiftUIKit.dylib
+2017-10-20 15:57:56 +0000  /usr/bin/ditto exited with 0
+2017-10-20 15:57:56 +0000  Processing step: IDEDistributionAppThinningStep
+2017-10-20 15:57:56 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2017-10-20 15:57:56 +0000  Processing step: IDEDistributionODRStep
+2017-10-20 15:57:56 +0000  Processing step: IDEDistributionStripXattrsStep
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a760eef0 'org.cocoapods.GTMSessionFetcher' '<DVTFilePath:0x7fe4a84aa620:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/GTMSessionFetcher.framework'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a852d650 'org.cocoapods.GoogleToolboxForMac' '<DVTFilePath:0x7fe4a8467a20:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/GoogleToolboxForMac.framework'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a748cd10 'org.cocoapods.leveldb' '<DVTFilePath:0x7fe4a8471e50:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/leveldb.framework'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a86da6d0 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7fe4a8123640:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCore.dylib'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a758ce90 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7fe4a8578300:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreFoundation.dylib'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a8d60a60 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7fe4a85f0920:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreGraphics.dylib'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a40ae530 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7fe4a85491f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreImage.dylib'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a87ca720 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7fe4a8578290:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftDarwin.dylib'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a879d750 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7fe4a75b0790:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftDispatch.dylib'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a85aec30 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7fe4a75d8550:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftFoundation.dylib'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a86de2b0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7fe4a755f6f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftMetal.dylib'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a852a410 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7fe4a75e5fa0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftObjectiveC.dylib'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a7580fd0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7fe4a75877f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftQuartzCore.dylib'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a8aa5530 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7fe4a851fd70:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftUIKit.dylib'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a8d578e0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7fe4a72ce8e0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftos.dylib'>'>
+2017-10-20 15:57:56 +0000  Skipping stripping extended attributes of item: <IDEDistributionItem: 0x7fe4a8d32ca0 'org.cocoapods.nanopb' '<DVTFilePath:0x7fe4a84ef010:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/nanopb.framework'>'>
+2017-10-20 15:57:56 +0000  Running /usr/bin/xattr '-cr' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app'
+2017-10-20 15:57:56 +0000  /usr/bin/xattr exited with 0
+2017-10-20 15:57:56 +0000  Processing step: IDEDistributionCodesignStep
+2017-10-20 15:57:56 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a760eef0 'org.cocoapods.GTMSessionFetcher' '<DVTFilePath:0x7fe4a84aa620:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/GTMSessionFetcher.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a8d236f0>: {
+}
+2017-10-20 15:57:56 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a760eef0 'org.cocoapods.GTMSessionFetcher' '<DVTFilePath:0x7fe4a84aa620:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/GTMSessionFetcher.framework'>'>: {
+}
+2017-10-20 15:57:56 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a760eef0 'org.cocoapods.GTMSessionFetcher' '<DVTFilePath:0x7fe4a84aa620:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/GTMSessionFetcher.framework'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsXZDjfD
+2017-10-20 15:57:56 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsXZDjfD' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/GTMSessionFetcher.framework'
+2017-10-20 15:57:56 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/GTMSessionFetcher.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.GTMSessionFetcher]
+2017-10-20 15:57:56 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:56 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a852d650 'org.cocoapods.GoogleToolboxForMac' '<DVTFilePath:0x7fe4a8467a20:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/GoogleToolboxForMac.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a8486820>: {
+}
+2017-10-20 15:57:56 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a852d650 'org.cocoapods.GoogleToolboxForMac' '<DVTFilePath:0x7fe4a8467a20:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/GoogleToolboxForMac.framework'>'>: {
+}
+2017-10-20 15:57:56 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a852d650 'org.cocoapods.GoogleToolboxForMac' '<DVTFilePath:0x7fe4a8467a20:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/GoogleToolboxForMac.framework'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsPSpHdN
+2017-10-20 15:57:56 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsPSpHdN' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/GoogleToolboxForMac.framework'
+2017-10-20 15:57:56 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/GoogleToolboxForMac.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.GoogleToolboxForMac]
+2017-10-20 15:57:56 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:56 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a748cd10 'org.cocoapods.leveldb' '<DVTFilePath:0x7fe4a8471e50:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/leveldb.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a2e53f80>: {
+}
+2017-10-20 15:57:56 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a748cd10 'org.cocoapods.leveldb' '<DVTFilePath:0x7fe4a8471e50:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/leveldb.framework'>'>: {
+}
+2017-10-20 15:57:56 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a748cd10 'org.cocoapods.leveldb' '<DVTFilePath:0x7fe4a8471e50:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/leveldb.framework'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsRIZiaa
+2017-10-20 15:57:56 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsRIZiaa' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/leveldb.framework'
+2017-10-20 15:57:56 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/leveldb.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.leveldb]
+2017-10-20 15:57:56 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:56 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a86da6d0 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7fe4a8123640:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCore.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a344aaa0>: {
+}
+2017-10-20 15:57:56 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a86da6d0 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7fe4a8123640:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCore.dylib'>'>: {
+}
+2017-10-20 15:57:56 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a86da6d0 'com.apple.dt.runtime.swiftCore' '<DVTFilePath:0x7fe4a8123640:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCore.dylib'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsRcPISU
+2017-10-20 15:57:56 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsRcPISU' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCore.dylib'
+2017-10-20 15:57:56 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCore.dylib: replacing existing signature
+2017-10-20 15:57:57 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCore]
+2017-10-20 15:57:57 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:57 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a758ce90 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7fe4a8578300:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreFoundation.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a844e360>: {
+}
+2017-10-20 15:57:57 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a758ce90 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7fe4a8578300:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreFoundation.dylib'>'>: {
+}
+2017-10-20 15:57:57 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a758ce90 'com.apple.dt.runtime.swiftCoreFoundation' '<DVTFilePath:0x7fe4a8578300:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreFoundation.dylib'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlements26sW59
+2017-10-20 15:57:57 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlements26sW59' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCoreFoundation.dylib'
+2017-10-20 15:57:57 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCoreFoundation.dylib: replacing existing signature
+2017-10-20 15:57:57 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCoreFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreFoundation]
+2017-10-20 15:57:57 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:57 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a8d60a60 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7fe4a85f0920:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreGraphics.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a8d2e970>: {
+}
+2017-10-20 15:57:57 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a8d60a60 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7fe4a85f0920:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreGraphics.dylib'>'>: {
+}
+2017-10-20 15:57:57 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a8d60a60 'com.apple.dt.runtime.swiftCoreGraphics' '<DVTFilePath:0x7fe4a85f0920:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreGraphics.dylib'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsWxkLo4
+2017-10-20 15:57:57 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsWxkLo4' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCoreGraphics.dylib'
+2017-10-20 15:57:57 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCoreGraphics.dylib: replacing existing signature
+2017-10-20 15:57:57 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCoreGraphics.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreGraphics]
+2017-10-20 15:57:57 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:57 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a40ae530 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7fe4a85491f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreImage.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a846e530>: {
+}
+2017-10-20 15:57:57 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a40ae530 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7fe4a85491f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreImage.dylib'>'>: {
+}
+2017-10-20 15:57:57 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a40ae530 'com.apple.dt.runtime.swiftCoreImage' '<DVTFilePath:0x7fe4a85491f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftCoreImage.dylib'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsVUpEEs
+2017-10-20 15:57:57 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsVUpEEs' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCoreImage.dylib'
+2017-10-20 15:57:57 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCoreImage.dylib: replacing existing signature
+2017-10-20 15:57:57 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftCoreImage.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftCoreImage]
+2017-10-20 15:57:57 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:57 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a87ca720 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7fe4a8578290:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftDarwin.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a8d794e0>: {
+}
+2017-10-20 15:57:57 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a87ca720 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7fe4a8578290:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftDarwin.dylib'>'>: {
+}
+2017-10-20 15:57:57 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a87ca720 'com.apple.dt.runtime.swiftDarwin' '<DVTFilePath:0x7fe4a8578290:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftDarwin.dylib'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsUHC6hc
+2017-10-20 15:57:57 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsUHC6hc' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftDarwin.dylib'
+2017-10-20 15:57:57 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftDarwin.dylib: replacing existing signature
+2017-10-20 15:57:58 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftDarwin.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDarwin]
+2017-10-20 15:57:58 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:58 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a879d750 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7fe4a75b0790:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftDispatch.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a8d801f0>: {
+}
+2017-10-20 15:57:58 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a879d750 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7fe4a75b0790:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftDispatch.dylib'>'>: {
+}
+2017-10-20 15:57:58 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a879d750 'com.apple.dt.runtime.swiftDispatch' '<DVTFilePath:0x7fe4a75b0790:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftDispatch.dylib'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsdhFKUD
+2017-10-20 15:57:58 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsdhFKUD' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftDispatch.dylib'
+2017-10-20 15:57:58 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftDispatch.dylib: replacing existing signature
+2017-10-20 15:57:58 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftDispatch.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftDispatch]
+2017-10-20 15:57:58 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:58 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a85aec30 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7fe4a75d8550:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftFoundation.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a8a83220>: {
+}
+2017-10-20 15:57:58 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a85aec30 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7fe4a75d8550:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftFoundation.dylib'>'>: {
+}
+2017-10-20 15:57:58 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a85aec30 'com.apple.dt.runtime.swiftFoundation' '<DVTFilePath:0x7fe4a75d8550:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftFoundation.dylib'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsDYA3MJ
+2017-10-20 15:57:58 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsDYA3MJ' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftFoundation.dylib'
+2017-10-20 15:57:58 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftFoundation.dylib: replacing existing signature
+2017-10-20 15:57:58 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftFoundation.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftFoundation]
+2017-10-20 15:57:58 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:58 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a86de2b0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7fe4a755f6f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftMetal.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a401d100>: {
+}
+2017-10-20 15:57:58 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a86de2b0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7fe4a755f6f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftMetal.dylib'>'>: {
+}
+2017-10-20 15:57:58 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a86de2b0 'com.apple.dt.runtime.swiftMetal' '<DVTFilePath:0x7fe4a755f6f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftMetal.dylib'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementseYSqkF
+2017-10-20 15:57:58 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementseYSqkF' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftMetal.dylib'
+2017-10-20 15:57:58 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftMetal.dylib: replacing existing signature
+2017-10-20 15:57:58 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftMetal.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftMetal]
+2017-10-20 15:57:58 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:58 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a852a410 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7fe4a75e5fa0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftObjectiveC.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a8d2d780>: {
+}
+2017-10-20 15:57:58 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a852a410 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7fe4a75e5fa0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftObjectiveC.dylib'>'>: {
+}
+2017-10-20 15:57:58 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a852a410 'com.apple.dt.runtime.swiftObjectiveC' '<DVTFilePath:0x7fe4a75e5fa0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftObjectiveC.dylib'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementswwEWQa
+2017-10-20 15:57:58 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementswwEWQa' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftObjectiveC.dylib'
+2017-10-20 15:57:58 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftObjectiveC.dylib: replacing existing signature
+2017-10-20 15:57:58 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftObjectiveC.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftObjectiveC]
+2017-10-20 15:57:58 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:58 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a7580fd0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7fe4a75877f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftQuartzCore.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a8a48f90>: {
+}
+2017-10-20 15:57:58 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a7580fd0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7fe4a75877f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftQuartzCore.dylib'>'>: {
+}
+2017-10-20 15:57:58 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a7580fd0 'com.apple.dt.runtime.swiftQuartzCore' '<DVTFilePath:0x7fe4a75877f0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftQuartzCore.dylib'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsxwk9sR
+2017-10-20 15:57:58 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsxwk9sR' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftQuartzCore.dylib'
+2017-10-20 15:57:58 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftQuartzCore.dylib: replacing existing signature
+2017-10-20 15:57:58 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftQuartzCore.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftQuartzCore]
+2017-10-20 15:57:58 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:58 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a8aa5530 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7fe4a851fd70:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftUIKit.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a8a8e440>: {
+}
+2017-10-20 15:57:58 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a8aa5530 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7fe4a851fd70:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftUIKit.dylib'>'>: {
+}
+2017-10-20 15:57:58 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a8aa5530 'com.apple.dt.runtime.swiftUIKit' '<DVTFilePath:0x7fe4a851fd70:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftUIKit.dylib'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsWZi80i
+2017-10-20 15:57:58 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsWZi80i' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftUIKit.dylib'
+2017-10-20 15:57:59 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftUIKit.dylib: replacing existing signature
+2017-10-20 15:57:59 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftUIKit.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftUIKit]
+2017-10-20 15:57:59 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:59 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a8d578e0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7fe4a72ce8e0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftos.dylib'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a8d75bf0>: {
+}
+2017-10-20 15:57:59 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a8d578e0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7fe4a72ce8e0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftos.dylib'>'>: {
+}
+2017-10-20 15:57:59 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a8d578e0 'com.apple.dt.runtime.swiftos' '<DVTFilePath:0x7fe4a72ce8e0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/libswiftos.dylib'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsZtvUlg
+2017-10-20 15:57:59 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlementsZtvUlg' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftos.dylib'
+2017-10-20 15:57:59 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftos.dylib: replacing existing signature
+2017-10-20 15:57:59 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/libswiftos.dylib: signed Mach-O universal (armv7 armv7s arm64) [com.apple.dt.runtime.swiftos]
+2017-10-20 15:57:59 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:59 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a8d32ca0 'org.cocoapods.nanopb' '<DVTFilePath:0x7fe4a84ef010:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/nanopb.framework'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a8a9d530>: {
+}
+2017-10-20 15:57:59 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a8d32ca0 'org.cocoapods.nanopb' '<DVTFilePath:0x7fe4a84ef010:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/nanopb.framework'>'>: {
+}
+2017-10-20 15:57:59 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a8d32ca0 'org.cocoapods.nanopb' '<DVTFilePath:0x7fe4a84ef010:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app/Frameworks/nanopb.framework'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlements2yRe3g
+2017-10-20 15:57:59 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlements2yRe3g' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/nanopb.framework'
+2017-10-20 15:57:59 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app/Frameworks/nanopb.framework: signed bundle with Mach-O universal (arm64) [org.cocoapods.nanopb]
+2017-10-20 15:57:59 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:57:59 +0000  Applying entitlements delta for <IDEDistributionItem: 0x7fe4a713f420 'com.anthonychan.partnershit' '<DVTFilePath:0x7fe4a86060d0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app'>'> from <IDEiCloudEntitlementsProcessor: 0x7fe4a764bf20>: {
+}
+2017-10-20 15:57:59 +0000  Entitlements for <IDEDistributionItem: 0x7fe4a713f420 'com.anthonychan.partnershit' '<DVTFilePath:0x7fe4a86060d0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app'>'>: {
+    "application-identifier" = "VV9AQTZEBQ.com.anthonychan.partnershit";
+    "aps-environment" = production;
+    "beta-reports-active" = 1;
+    "com.apple.developer.team-identifier" = VV9AQTZEBQ;
+    "get-task-allow" = 0;
+}
+2017-10-20 15:57:59 +0000  Writing entitlements for <IDEDistributionItem: 0x7fe4a713f420 'com.anthonychan.partnershit' '<DVTFilePath:0x7fe4a86060d0:'/Users/user/Library/Developer/Xcode/Archives/2017-10-20/partnershit 20-10-2017, 23.57.xcarchive/Products/Applications/partnershit.app'>'> to: /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlements2z9Tqs
+2017-10-20 15:57:59 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'FFC1BFCD50440E3736A8690683405F9182140814' '--preserve-metadata=identifier,flags' '--entitlements' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/entitlements2z9Tqs' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app'
+2017-10-20 15:58:00 +0000  /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root/Payload/partnershit.app: signed app bundle with Mach-O thin (arm64) [com.anthonychan.partnershit]
+2017-10-20 15:58:00 +0000  /usr/bin/codesign exited with 0
+2017-10-20 15:58:00 +0000  Processing step: IDEDistributionStreamingZipItemStep
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Skipping step: IDEDistributionStreamingZipItemStep because it said so
+2017-10-20 15:58:00 +0000  Processing step: IDEDistributionCreateIPAStep
+2017-10-20 15:58:00 +0000  Running /usr/bin/rsync '-8aPhhE' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Symbols' '--link-dest' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root'
+2017-10-20 15:58:00 +0000  building file list ... 
+2017-10-20 15:58:00 +0000   0 files...2017-10-20 15:58:00 +0000  37 files to consider
+2017-10-20 15:58:00 +0000  Symbols/
+2017-10-20 15:58:00 +0000  
+2017-10-20 15:58:00 +0000  sent 1.93K bytes  received 26 bytes  3.92K bytes/sec
+total size is 18.57M  speedup is 9711.49
+2017-10-20 15:58:00 +0000  /usr/bin/rsync exited with 0
+2017-10-20 15:58:00 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root' '/var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Packages/partnershit.ipa'
+2017-10-20 15:58:00 +0000  >>> Copying /var/folders/gb/_q4p_sfj2154jnfc59vv06gm0000gp/T/XcodeDistPipeline.O5p/Root 
+2017-10-20 15:58:00 +0000  copying file ./BCSymbolMaps/11A8EFDD-5293-30A1-8F1F-979F2370255F.bcsymbolmap ... 
+2017-10-20 15:58:00 +0000  65858 bytes for ./BCSymbolMaps/11A8EFDD-5293-30A1-8F1F-979F2370255F.bcsymbolmap
+copying file ./BCSymbolMaps/2290E94F-A0F7-3686-AC69-423132144336.bcsymbolmap ... 
+2017-10-20 15:58:00 +0000  11028 bytes for ./BCSymbolMaps/2290E94F-A0F7-3686-AC69-423132144336.bcsymbolmap
+copying file ./BCSymbolMaps/48E33532-6739-3D38-A318-8A519B297957.bcsymbolmap ... 
+2017-10-20 15:58:00 +0000  12283 bytes for ./BCSymbolMaps/48E33532-6739-3D38-A318-8A519B297957.bcsymbolmap
+copying file ./BCSymbolMaps/9BE03905-55FC-3FD0-9744-7CB02E86F523.bcsymbolmap ... 
+2017-10-20 15:58:00 +0000  60851 bytes for ./BCSymbolMaps/9BE03905-55FC-3FD0-9744-7CB02E86F523.bcsymbolmap
+copying file ./BCSymbolMaps/F3006FAB-FC70-3886-8C39-8BA16897AC9E.bcsymbolmap ... 
+2017-10-20 15:58:00 +0000  472778 bytes for ./BCSymbolMaps/F3006FAB-FC70-3886-8C39-8BA16897AC9E.bcsymbolmap
+2017-10-20 15:58:00 +0000  copying file ./Payload/partnershit.app/_CodeSignature/CodeResources ... 
+2017-10-20 15:58:00 +0000  15559 bytes for ./Payload/partnershit.app/_CodeSignature/CodeResources
+copying file ./Payload/partnershit.app/AppIcon60x60@2x.png ... 
+2017-10-20 15:58:00 +0000  7819 bytes for ./Payload/partnershit.app/AppIcon60x60@2x.png
+copying file ./Payload/partnershit.app/AppIcon76x76@2x~ipad.png ... 
+2017-10-20 15:58:00 +0000  9977 bytes for ./Payload/partnershit.app/AppIcon76x76@2x~ipad.png
+copying file ./Payload/partnershit.app/archived-expanded-entitlements.xcent ... 
+2017-10-20 15:58:00 +0000  246 bytes for ./Payload/partnershit.app/archived-expanded-entitlements.xcent
+copying file ./Payload/partnershit.app/Assets.car ... 
+2017-10-20 15:58:00 +0000  464120 bytes for ./Payload/partnershit.app/Assets.car
+2017-10-20 15:58:00 +0000  copying file ./Payload/partnershit.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2926 bytes for ./Payload/partnershit.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+copying file ./Payload/partnershit.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+258 bytes for ./Payload/partnershit.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
+copying file ./Payload/partnershit.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2017-10-20 15:58:00 +0000  832 bytes for ./Payload/partnershit.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+copying file ./Payload/partnershit.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib ... 
+2017-10-20 15:58:00 +0000  5371 bytes for ./Payload/partnershit.app/Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib
+2017-10-20 15:58:00 +0000  copying file ./Payload/partnershit.app/Base.lproj/Main.storyboardc/DetailView.nib ... 
+1034 bytes for ./Payload/partnershit.app/Base.lproj/Main.storyboardc/DetailView.nib
+copying file ./Payload/partnershit.app/Base.lproj/Main.storyboardc/Info.plist ... 
+284 bytes for ./Payload/partnershit.app/Base.lproj/Main.storyboardc/Info.plist
+copying file ./Payload/partnershit.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib ... 
+2017-10-20 15:58:00 +0000  983 bytes for ./Payload/partnershit.app/Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
+copying file ./Payload/partnershit.app/Base.lproj/Main.storyboardc/ULX-XZ-qiE-view-jbp-39-L1M.nib ... 
+2017-10-20 15:58:00 +0000  7121 bytes for ./Payload/partnershit.app/Base.lproj/Main.storyboardc/ULX-XZ-qiE-view-jbp-39-L1M.nib
+2017-10-20 15:58:00 +0000  copying file ./Payload/partnershit.app/embedded.mobileprovision ... 
+2017-10-20 15:58:00 +0000  7527 bytes for ./Payload/partnershit.app/embedded.mobileprovision
+2017-10-20 15:58:00 +0000  copying file ./Payload/partnershit.app/Frameworks/GoogleToolboxForMac.framework/_CodeSignature/CodeResources ... 
+2202 bytes for ./Payload/partnershit.app/Frameworks/GoogleToolboxForMac.framework/_CodeSignature/CodeResources
+copying file ./Payload/partnershit.app/Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac ... 
+2017-10-20 15:58:00 +0000  158720 bytes for ./Payload/partnershit.app/Frameworks/GoogleToolboxForMac.framework/GoogleToolboxForMac
+2017-10-20 15:58:00 +0000  copying file ./Payload/partnershit.app/Frameworks/GoogleToolboxForMac.framework/Info.plist ... 
+762 bytes for ./Payload/partnershit.app/Frameworks/GoogleToolboxForMac.framework/Info.plist
+copying file ./Payload/partnershit.app/Frameworks/GTMSessionFetcher.framework/_CodeSignature/CodeResources ... 
+2017-10-20 15:58:00 +0000  2202 bytes for ./Payload/partnershit.app/Frameworks/GTMSessionFetcher.framework/_CodeSignature/CodeResources
+copying file ./Payload/partnershit.app/Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher ... 
+2017-10-20 15:58:00 +0000  688768 bytes for ./Payload/partnershit.app/Frameworks/GTMSessionFetcher.framework/GTMSessionFetcher
+copying file ./Payload/partnershit.app/Frameworks/GTMSessionFetcher.framework/Info.plist ... 
+2017-10-20 15:58:00 +0000  759 bytes for ./Payload/partnershit.app/Frameworks/GTMSessionFetcher.framework/Info.plist
+copying file ./Payload/partnershit.app/Frameworks/leveldb.framework/_CodeSignature/CodeResources ... 
+2202 bytes for ./Payload/partnershit.app/Frameworks/leveldb.framework/_CodeSignature/CodeResources
+2017-10-20 15:58:00 +0000  copying file ./Payload/partnershit.app/Frameworks/leveldb.framework/Info.plist ... 
+2017-10-20 15:58:00 +0000  737 bytes for ./Payload/partnershit.app/Frameworks/leveldb.framework/Info.plist
+copying file ./Payload/partnershit.app/Frameworks/leveldb.framework/leveldb ... 
+2017-10-20 15:58:00 +0000  1641040 bytes for ./Payload/partnershit.app/Frameworks/leveldb.framework/leveldb
+copying file ./Payload/partnershit.app/Frameworks/libswiftCore.dylib ... 
+2017-10-20 15:58:02 +0000  68657264 bytes for ./Payload/partnershit.app/Frameworks/libswiftCore.dylib
+copying file ./Payload/partnershit.app/Frameworks/libswiftCoreFoundation.dylib ... 
+2017-10-20 15:58:02 +0000  258016 bytes for ./Payload/partnershit.app/Frameworks/libswiftCoreFoundation.dylib
+copying file ./Payload/partnershit.app/Frameworks/libswiftCoreGraphics.dylib ... 
+2017-10-20 15:58:03 +0000  1269152 bytes for ./Payload/partnershit.app/Frameworks/libswiftCoreGraphics.dylib
+copying file ./Payload/partnershit.app/Frameworks/libswiftCoreImage.dylib ... 
+2017-10-20 15:58:03 +0000  258576 bytes for ./Payload/partnershit.app/Frameworks/libswiftCoreImage.dylib
+copying file ./Payload/partnershit.app/Frameworks/libswiftDarwin.dylib ... 
+2017-10-20 15:58:03 +0000  599584 bytes for ./Payload/partnershit.app/Frameworks/libswiftDarwin.dylib
+copying file ./Payload/partnershit.app/Frameworks/libswiftDispatch.dylib ... 
+2017-10-20 15:58:03 +0000  2441056 bytes for ./Payload/partnershit.app/Frameworks/libswiftDispatch.dylib
+copying file ./Payload/partnershit.app/Frameworks/libswiftFoundation.dylib ... 
+2017-10-20 15:58:04 +0000  28714544 bytes for ./Payload/partnershit.app/Frameworks/libswiftFoundation.dylib
+copying file ./Payload/partnershit.app/Frameworks/libswiftMetal.dylib ... 
+2017-10-20 15:58:04 +0000  399696 bytes for ./Payload/partnershit.app/Frameworks/libswiftMetal.dylib
+copying file ./Payload/partnershit.app/Frameworks/libswiftObjectiveC.dylib ... 
+2017-10-20 15:58:04 +0000  506096 bytes for ./Payload/partnershit.app/Frameworks/libswiftObjectiveC.dylib
+copying file ./Payload/partnershit.app/Frameworks/libswiftos.dylib ... 
+2017-10-20 15:58:04 +0000  446704 bytes for ./Payload/partnershit.app/Frameworks/libswiftos.dylib
+copying file ./Payload/partnershit.app/Frameworks/libswiftQuartzCore.dylib ... 
+2017-10-20 15:58:04 +0000  311280 bytes for ./Payload/partnershit.app/Frameworks/libswiftQuartzCore.dylib
+copying file ./Payload/partnershit.app/Frameworks/libswiftUIKit.dylib ... 
+2017-10-20 15:58:04 +0000  789488 bytes for ./Payload/partnershit.app/Frameworks/libswiftUIKit.dylib
+2017-10-20 15:58:04 +0000  copying file ./Payload/partnershit.app/Frameworks/nanopb.framework/_CodeSignature/CodeResources ... 
+2202 bytes for ./Payload/partnershit.app/Frameworks/nanopb.framework/_CodeSignature/CodeResources
+copying file ./Payload/partnershit.app/Frameworks/nanopb.framework/Info.plist ... 
+734 bytes for ./Payload/partnershit.app/Frameworks/nanopb.framework/Info.plist
+copying file ./Payload/partnershit.app/Frameworks/nanopb.framework/nanopb ... 
+2017-10-20 15:58:04 +0000  157360 bytes for ./Payload/partnershit.app/Frameworks/nanopb.framework/nanopb
+copying file ./Payload/partnershit.app/GoogleService-Info.plist ... 
+2017-10-20 15:58:04 +0000  894 bytes for ./Payload/partnershit.app/GoogleService-Info.plist
+copying file ./Payload/partnershit.app/Info.plist ... 
+1392 bytes for ./Payload/partnershit.app/Info.plist
+copying file ./Payload/partnershit.app/partnershit ... 
+2017-10-20 15:58:04 +0000  8366816 bytes for ./Payload/partnershit.app/partnershit
+copying file ./Payload/partnershit.app/PkgInfo ... 
+2017-10-20 15:58:04 +0000  8 bytes for ./Payload/partnershit.app/PkgInfo
+copying file ./Payload/partnershit.app/StatementCellTableViewCell.nib ... 
+3658 bytes for ./Payload/partnershit.app/StatementCellTableViewCell.nib
+2017-10-20 15:58:04 +0000  copying file ./SwiftSupport/iphoneos/libswiftCore.dylib ... 
+2017-10-20 15:58:07 +0000  68656832 bytes for ./SwiftSupport/iphoneos/libswiftCore.dylib
+copying file ./SwiftSupport/iphoneos/libswiftCoreFoundation.dylib ... 
+2017-10-20 15:58:07 +0000  257584 bytes for ./SwiftSupport/iphoneos/libswiftCoreFoundation.dylib
+copying file ./SwiftSupport/iphoneos/libswiftCoreGraphics.dylib ... 
+2017-10-20 15:58:07 +0000  1268736 bytes for ./SwiftSupport/iphoneos/libswiftCoreGraphics.dylib
+copying file ./SwiftSupport/iphoneos/libswiftCoreImage.dylib ... 
+2017-10-20 15:58:07 +0000  258160 bytes for ./SwiftSupport/iphoneos/libswiftCoreImage.dylib
+copying file ./SwiftSupport/iphoneos/libswiftDarwin.dylib ... 
+2017-10-20 15:58:07 +0000  599168 bytes for ./SwiftSupport/iphoneos/libswiftDarwin.dylib
+copying file ./SwiftSupport/iphoneos/libswiftDispatch.dylib ... 
+2017-10-20 15:58:08 +0000  2440624 bytes for ./SwiftSupport/iphoneos/libswiftDispatch.dylib
+copying file ./SwiftSupport/iphoneos/libswiftFoundation.dylib ... 
+2017-10-20 15:58:09 +0000  28714112 bytes for ./SwiftSupport/iphoneos/libswiftFoundation.dylib
+copying file ./SwiftSupport/iphoneos/libswiftMetal.dylib ... 
+2017-10-20 15:58:09 +0000  399264 bytes for ./SwiftSupport/iphoneos/libswiftMetal.dylib
+copying file ./SwiftSupport/iphoneos/libswiftObjectiveC.dylib ... 
+2017-10-20 15:58:09 +0000  505680 bytes for ./SwiftSupport/iphoneos/libswiftObjectiveC.dylib
+copying file ./SwiftSupport/iphoneos/libswiftos.dylib ... 
+2017-10-20 15:58:09 +0000  446288 bytes for ./SwiftSupport/iphoneos/libswiftos.dylib
+copying file ./SwiftSupport/iphoneos/libswiftQuartzCore.dylib ... 
+2017-10-20 15:58:09 +0000  310864 bytes for ./SwiftSupport/iphoneos/libswiftQuartzCore.dylib
+copying file ./SwiftSupport/iphoneos/libswiftUIKit.dylib ... 
+2017-10-20 15:58:09 +0000  789072 bytes for ./SwiftSupport/iphoneos/libswiftUIKit.dylib
+2017-10-20 15:58:09 +0000  copying file ./Symbols/09A967B8-DDD8-3708-813B-BF331F20C289.symbols ... 
+2017-10-20 15:58:09 +0000  1568992 bytes for ./Symbols/09A967B8-DDD8-3708-813B-BF331F20C289.symbols
+copying file ./Symbols/18B0C884-1821-3528-9A17-A99C43E82E3A.symbols ... 
+2017-10-20 15:58:09 +0000  7656 bytes for ./Symbols/18B0C884-1821-3528-9A17-A99C43E82E3A.symbols
+copying file ./Symbols/1A784627-F91A-39C4-892F-70B6F80B092B.symbols ... 
+2017-10-20 15:58:09 +0000  234272 bytes for ./Symbols/1A784627-F91A-39C4-892F-70B6F80B092B.symbols
+copying file ./Symbols/1EBA30C4-7E59-3903-B2AF-D84FB3F4F4C6.symbols ... 
+2017-10-20 15:58:09 +0000  2736 bytes for ./Symbols/1EBA30C4-7E59-3903-B2AF-D84FB3F4F4C6.symbols
+copying file ./Symbols/256ACD30-B823-3E26-96A0-AAC3FE52CE98.symbols ... 
+2017-10-20 15:58:09 +0000  234128 bytes for ./Symbols/256ACD30-B823-3E26-96A0-AAC3FE52CE98.symbols
+copying file ./Symbols/264689C8-923C-3C08-A0B8-8A0E705202B4.symbols ... 
+2017-10-20 15:58:09 +0000  38552 bytes for ./Symbols/264689C8-923C-3C08-A0B8-8A0E705202B4.symbols
+copying file ./Symbols/2CA6F53D-1F3E-3BC0-AB4E-EF5146BCF9DB.symbols ... 
+2017-10-20 15:58:09 +0000  55696 bytes for ./Symbols/2CA6F53D-1F3E-3BC0-AB4E-EF5146BCF9DB.symbols
+copying file ./Symbols/3141C2DB-F7A6-3D39-95DD-7796DD4E96CE.symbols ... 
+2017-10-20 15:58:09 +0000  2456 bytes for ./Symbols/3141C2DB-F7A6-3D39-95DD-7796DD4E96CE.symbols
+copying file ./Symbols/399F6834-14B6-3BE7-A858-0937F1246506.symbols ... 
+2017-10-20 15:58:09 +0000  24384 bytes for ./Symbols/399F6834-14B6-3BE7-A858-0937F1246506.symbols
+copying file ./Symbols/4CCDEDF1-BC3B-3752-A5F3-29D372E96EA4.symbols ... 
+2017-10-20 15:58:09 +0000  1565808 bytes for ./Symbols/4CCDEDF1-BC3B-3752-A5F3-29D372E96EA4.symbols
+copying file ./Symbols/5911F389-C3D1-3C86-B607-CFEA4CDDF5E5.symbols ... 
+2017-10-20 15:58:09 +0000  12128 bytes for ./Symbols/5911F389-C3D1-3C86-B607-CFEA4CDDF5E5.symbols
+copying file ./Symbols/5F2D52B8-304B-3F6D-9529-4F703CD261D8.symbols ... 
+2017-10-20 15:58:09 +0000  4442304 bytes for ./Symbols/5F2D52B8-304B-3F6D-9529-4F703CD261D8.symbols
+copying file ./Symbols/5F36F98A-7451-3977-A13D-DF89F0D6C403.symbols ... 
+2017-10-20 15:58:09 +0000  12304 bytes for ./Symbols/5F36F98A-7451-3977-A13D-DF89F0D6C403.symbols
+2017-10-20 15:58:09 +0000  copying file ./Symbols/89894AD1-0EFC-3DF7-AA2F-89AE63680148.symbols ... 
+2824 bytes for ./Symbols/89894AD1-0EFC-3DF7-AA2F-89AE63680148.symbols
+2017-10-20 15:58:09 +0000  copying file ./Symbols/9005DF9D-B26C-3D9A-B714-756EDE0EDC83.symbols ... 
+2017-10-20 15:58:09 +0000  96392 bytes for ./Symbols/9005DF9D-B26C-3D9A-B714-756EDE0EDC83.symbols
+copying file ./Symbols/9987D026-CDC2-3F14-82E3-03005AE88010.symbols ... 
+2017-10-20 15:58:09 +0000  55664 bytes for ./Symbols/9987D026-CDC2-3F14-82E3-03005AE88010.symbols
+copying file ./Symbols/A3CBFC0E-E170-35B0-A98D-9380DF90DAC9.symbols ... 
+2017-10-20 15:58:09 +0000  23952 bytes for ./Symbols/A3CBFC0E-E170-35B0-A98D-9380DF90DAC9.symbols
+copying file ./Symbols/AABFA3AF-9AAF-3170-A08A-7C2D66AB81D2.symbols ... 
+2017-10-20 15:58:09 +0000  13056 bytes for ./Symbols/AABFA3AF-9AAF-3170-A08A-7C2D66AB81D2.symbols
+copying file ./Symbols/AB0DEF8D-629A-39DE-A5FD-6F416FE9E5CA.symbols ... 
+2017-10-20 15:58:09 +0000  232040 bytes for ./Symbols/AB0DEF8D-629A-39DE-A5FD-6F416FE9E5CA.symbols
+2017-10-20 15:58:09 +0000  copying file ./Symbols/B690D9EB-9D65-3C6C-BE5B-A05382948643.symbols ... 
+2017-10-20 15:58:09 +0000  12304 bytes for ./Symbols/B690D9EB-9D65-3C6C-BE5B-A05382948643.symbols
+copying file ./Symbols/B69DF9E7-7EDF-306D-92F1-AA5839C7BBD5.symbols ... 
+2017-10-20 15:58:09 +0000  2736 bytes for ./Symbols/B69DF9E7-7EDF-306D-92F1-AA5839C7BBD5.symbols
+copying file ./Symbols/B82C2FD7-24ED-3C64-ACEA-F6D66ADE9985.symbols ... 
+2017-10-20 15:58:09 +0000  7384 bytes for ./Symbols/B82C2FD7-24ED-3C64-ACEA-F6D66ADE9985.symbols
+copying file ./Symbols/C19B20A3-FCF4-39B5-A2F2-713DB8CEAA36.symbols ... 
+2017-10-20 15:58:09 +0000  4424056 bytes for ./Symbols/C19B20A3-FCF4-39B5-A2F2-713DB8CEAA36.symbols
+copying file ./Symbols/C5A8EA7D-658C-3D0E-B44B-971D26CE1FD0.symbols ... 
+2017-10-20 15:58:09 +0000  37952 bytes for ./Symbols/C5A8EA7D-658C-3D0E-B44B-971D26CE1FD0.symbols
+copying file ./Symbols/C8180507-2D1C-3122-A6FC-47C09527C9FE.symbols ... 
+2017-10-20 15:58:09 +0000  4442888 bytes for ./Symbols/C8180507-2D1C-3122-A6FC-47C09527C9FE.symbols
+copying file ./Symbols/CD8D8392-4039-3994-84D8-7A8CD7BB91D8.symbols ... 
+2017-10-20 15:58:09 +0000  7384 bytes for ./Symbols/CD8D8392-4039-3994-84D8-7A8CD7BB91D8.symbols
+copying file ./Symbols/CEAFF8CA-DC9F-3F9B-949F-0F43C6295468.symbols ... 
+2017-10-20 15:58:09 +0000  96544 bytes for ./Symbols/CEAFF8CA-DC9F-3F9B-949F-0F43C6295468.symbols
+copying file ./Symbols/D9713216-E10C-3946-BFAA-B64DA735DE21.symbols ... 
+2017-10-20 15:58:09 +0000  13056 bytes for ./Symbols/D9713216-E10C-3946-BFAA-B64DA735DE21.symbols
+copying file ./Symbols/DCC088A1-C4F6-3763-9030-D88CB3903B71.symbols ... 
+2017-10-20 15:58:09 +0000  2352 bytes for ./Symbols/DCC088A1-C4F6-3763-9030-D88CB3903B71.symbols
+copying file ./Symbols/E0A5B724-7A18-3229-BDB1-6CC36740ED8C.symbols ... 
+2017-10-20 15:58:09 +0000  2352 bytes for ./Symbols/E0A5B724-7A18-3229-BDB1-6CC36740ED8C.symbols
+copying file ./Symbols/E60D8DE2-499F-366E-933D-345E6093E5B2.symbols ... 
+2017-10-20 15:58:09 +0000  96608 bytes for ./Symbols/E60D8DE2-499F-366E-933D-345E6093E5B2.symbols
+copying file ./Symbols/E9F76427-FFC9-3BB4-A445-658C39137DBB.symbols ... 
+2017-10-20 15:58:09 +0000  23952 bytes for ./Symbols/E9F76427-FFC9-3BB4-A445-658C39137DBB.symbols
+copying file ./Symbols/EFA009DB-7437-3766-A7FF-2F9BB2DDA94C.symbols ... 
+2017-10-20 15:58:10 +0000  1569144 bytes for ./Symbols/EFA009DB-7437-3766-A7FF-2F9BB2DDA94C.symbols
+copying file ./Symbols/F39429B5-02C1-3266-AF86-10257E7FF421.symbols ... 
+2017-10-20 15:58:10 +0000  38552 bytes for ./Symbols/F39429B5-02C1-3266-AF86-10257E7FF421.symbols
+copying file ./Symbols/F3DA9FF0-28D6-3CF6-8C93-5128FA2040CC.symbols ... 
+2017-10-20 15:58:10 +0000  55696 bytes for ./Symbols/F3DA9FF0-28D6-3CF6-8C93-5128FA2040CC.symbols
+copying file ./Symbols/F86D8F3C-DE14-3813-87B1-BAC49E4273BB.symbols ... 
+2017-10-20 15:58:10 +0000  13232 bytes for ./Symbols/F86D8F3C-DE14-3813-87B1-BAC49E4273BB.symbols
+2017-10-20 15:58:10 +0000  /usr/bin/ditto exited with 0
+2017-10-20 15:58:10 +0000  Processing step: IDEDistributionCreateManifestStep
+2017-10-20 15:58:10 +0000  Skipping step: IDEDistributionCreateManifestStep because it said so
