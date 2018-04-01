@@ -24,30 +24,56 @@ class ChannelTableViewController: UITableViewController {
     let currentLevelKey = "levelKey"
     
     @IBAction func addChannelBtn(_ sender: Any) {
-        let alert = UIAlertController(title: "加入頻道", message: "", preferredStyle: .alert)
-        alert.addTextField { (textField) in
-            textField.placeholder = "頻道名稱"
-        }
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        let alert = UIAlertController(title:"請選擇", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "新增頻道", style: .default, handler: {(_) in
+            self.addChannelAlert()
+        }))
+        alert.addAction(UIAlertAction(title: "加入頻道", style: .default, handler: {(_) in
+            self.joinChannelAlert()
+        }))
+        alert.addAction(UIAlertAction(title: "取消", style: .cancel))
+//        alert.addTextField { (textField) in
+//            textField.placeholder = "頻道名稱"
+//        }
+//        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         // 3. Grab the value from the text field, and print it when the user clicks OK.
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
-            let textField = alert?.textFields![0]
-            var isUnique = false
-            for channelName in self.channels {
-                if channelName == textField!.text {
-                    isUnique = true
-                }
-            }
-            if (!isUnique){
-                let channel = ChannelsObject()
-                channel.name = textField!.text!
-                try! self.realm.write {
-                    self.realm.add(channel)
-                }
-                self.channels.append(channel.name)
-                self.channelsTableView.reloadData()
-                self.ref.child("users").child(self.uid).child("channels").updateChildValues([channel.name: true])
-            }
+//        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
+//            let textField = alert?.textFields![0]
+//            var isUnique = false
+//            for channelName in self.channels {
+//                if channelName == textField!.text {
+//                    isUnique = true
+//                }
+//            }
+//            if (!isUnique){
+//                let channel = ChannelsObject()
+//                channel.name = textField!.text!
+//                try! self.realm.write {
+//                    self.realm.add(channel)
+//                }
+//                self.channels.append(channel.name)
+//                self.channelsTableView.reloadData()
+//                self.ref.child("users").child(self.uid).child("channels").updateChildValues([channel.name: true])
+//            }
+//        }))
+
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func addChannelAlert() {
+        let alert = UIAlertController(title: "新增頻道", message: "請輸入頻道名稱", preferredStyle: .alert)
+        alert.addTextField { (textField) in textField.placeholder = "頻道名稱"}
+        alert.addAction(UIAlertAction(title: "取消", style: .cancel))
+        alert.addAction(UIAlertAction(title: "確定", style: .default, handler: {(_) in
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func joinChannelAlert() {
+        let alert = UIAlertController(title: "加入頻道", message: "請輸入頻道代碼", preferredStyle: .alert)
+        alert.addTextField { (textField) in textField.placeholder = "頻道代碼"}
+        alert.addAction(UIAlertAction(title: "取消", style: .cancel))
+        alert.addAction(UIAlertAction(title: "確定", style: .default, handler: {(_) in
         }))
         self.present(alert, animated: true, completion: nil)
     }
@@ -59,11 +85,6 @@ class ChannelTableViewController: UITableViewController {
             channels.append(obj.name)
         }
         uid = preferences.object(forKey: currentLevelKey) as! String
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -104,14 +125,6 @@ class ChannelTableViewController: UITableViewController {
             detailView.channel = sender as! String
         }
     }
-    
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
 
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -129,12 +142,5 @@ class ChannelTableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
 
 }

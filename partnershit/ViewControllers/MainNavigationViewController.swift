@@ -10,8 +10,6 @@ import UIKit
 
 class MainNavigationViewController: UINavigationController {
     
-    var userName: String? = nil
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

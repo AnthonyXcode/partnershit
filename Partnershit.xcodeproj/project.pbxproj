@@ -17,9 +17,11 @@
 		CE449C561F922D7500DCC08B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE449C551F922D7500DCC08B /* DetailViewController.swift */; };
 		CE449C591F92499400DCC08B /* StatementCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE449C571F92499400DCC08B /* StatementCellTableViewCell.swift */; };
 		CE449C5A1F92499400DCC08B /* StatementCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE449C581F92499400DCC08B /* StatementCellTableViewCell.xib */; };
+		CE4AD9212070BAEC00411E8E /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD9202070BAEC00411E8E /* MyViewController.swift */; };
 		CE64A29C200CDDC70075A08A /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64A29B200CDDC70075A08A /* MainNavigationViewController.swift */; };
 		CE64A2A0200CE02B0075A08A /* ChannelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64A29F200CE02B0075A08A /* ChannelTableViewController.swift */; };
 		CE64A2A2200CEDC90075A08A /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64A2A1200CEDC90075A08A /* Channels.swift */; };
+		CE9BC8BB206FD31E00BA28CC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9BC8BC206FD31E00BA28CC /* FBSDKLoginKit.framework */; };
 		CEA6A5D51F9334F500C99407 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A5D41F9334F500C99407 /* NotificationService.swift */; };
 		CECC67E81F9217D700172EBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC67E71F9217D700172EBB /* AppDelegate.swift */; };
 		CECC67EA1F9217D700172EBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC67E91F9217D700172EBB /* ViewController.swift */; };
@@ -87,10 +89,12 @@
 		CE449C581F92499400DCC08B /* StatementCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatementCellTableViewCell.xib; sourceTree = "<group>"; };
 		CE449C601F9288F000DCC08B /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		CE449C621F9288F000DCC08B /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		CE4AD9202070BAEC00411E8E /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		CE64A29B200CDDC70075A08A /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		CE64A29F200CE02B0075A08A /* ChannelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewController.swift; sourceTree = "<group>"; };
 		CE64A2A1200CEDC90075A08A /* Channels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channels.swift; sourceTree = "<group>"; };
 		CE7E48421F928A130016D872 /* partnershit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = partnershit.entitlements; sourceTree = "<group>"; };
+		CE9BC8BC206FD31E00BA28CC /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA6A5D21F9334F500C99407 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA6A5D41F9334F500C99407 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		CEA6A5D61F9334F500C99407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9BC8BB206FD31E00BA28CC /* FBSDKLoginKit.framework in Frameworks */,
 				C86EC2980546E13124481F9B /* Pods_partnershit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +156,7 @@
 		6B5AF37953BA1D48DC0131FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE9BC8BC206FD31E00BA28CC /* FBSDKLoginKit.framework */,
 				CE449C601F9288F000DCC08B /* UserNotifications.framework */,
 				CE449C621F9288F000DCC08B /* UserNotificationsUI.framework */,
 				4E303A3D725DF861817FE194 /* Pods_partnershit.framework */,
@@ -193,6 +199,7 @@
 				CE64A29F200CE02B0075A08A /* ChannelTableViewController.swift */,
 				CE449C551F922D7500DCC08B /* DetailViewController.swift */,
 				CE64A29B200CDDC70075A08A /* MainNavigationViewController.swift */,
+				CE4AD9202070BAEC00411E8E /* MyViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -572,6 +579,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-partnershit/Pods-partnershit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -581,6 +593,11 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
@@ -679,6 +696,7 @@
 				CE449C591F92499400DCC08B /* StatementCellTableViewCell.swift in Sources */,
 				CECC67E81F9217D700172EBB /* AppDelegate.swift in Sources */,
 				CEE6AA731FE6B85400C99585 /* Statement.swift in Sources */,
+				CE4AD9212070BAEC00411E8E /* MyViewController.swift in Sources */,
 				CE25CF362013A56800FB1AFC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
