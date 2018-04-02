@@ -16,29 +16,23 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var msgTxt: UITextField!
     @IBOutlet weak var priceTxt: UITextField!
-    @IBOutlet weak var statusBtnOutlet: UIButton!
-    @IBAction func statusBtnAction(_ sender: Any) {
-        var value: String! = "Parked"
-        if (status == "Parked") {
-           value = "Using"
-        } else {
-           value = "Parked"
-        }
-        ref.child("status").child(channel).setValue(value)
-        OneSignal.postNotification(["contents": ["en": "Car is " + value.lowercased()], "include_player_ids": pushNotiUser])
-    }
     @IBAction func sendBtn(_ sender: Any) {
-        let key = ref.child("statement").childByAutoId().key
-        let dateFormater = DateFormatter()
-        dateFormater.dateFormat = "yyyy-MM-dd"
-        let dateString = dateFormater.string(from: datePicker.date)
-        var message = name
-        if (msgTxt.text != ""){
-            message = name + ": " + msgTxt.text!
-        }
-        let post = ["date": dateString, "price":priceTxt.text, "message": message] as [String : Any]
-        let childUpdates = ["statement/" + channel + "/" + key: post]
-        ref.updateChildValues(childUpdates)
+//        let key = ref.child("statement").childByAutoId().key
+//        let dateFormater = DateFormatter()
+//        dateFormater.dateFormat = "yyyy-MM-dd"
+//        let dateString = dateFormater.string(from: datePicker.date)
+//        var message = name
+//        if (msgTxt.text != ""){
+//            message = name + ": " + msgTxt.text!
+//        }
+//        let post = ["date": dateString, "price":priceTxt.text, "message": message] as [String : Any]
+//        let childUpdates = ["statement/" + channelName + "/" + key: post]
+//        ref.updateChildValues(childUpdates)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let alert = storyboard.instantiateViewController(withIdentifier: "addStatementAlert")
+        alert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        alert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        self.present(alert, animated: true, completion: nil)
     }
     
     var ref: DatabaseReference! = Database.database().reference()
@@ -49,13 +43,14 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     var name: String! = ""
     var items = [StatementObject]()
     let oneSignalState: OSPermissionSubscriptionState = OneSignal.getPermissionSubscriptionState()
-    var channel = ""
+    var channelName = ""
+    var channelId = ""
     let preferences = UserDefaults.standard
     let currentLevelKey = "levelKey"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        statusBtnOutlet.isEnabled = false
+        self.tabBarController?.tabBar.isHidden = true
         firebaseFetching()
         let nib = UINib(nibName: "StatementCellTableViewCell", bundle: nil)
         detailTV.register(nib, forCellReuseIdentifier: "Cell")
@@ -64,9 +59,8 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         }
         hideKeyboardWhenTappedAround()
         resizeViewForKeyboard()
-        updatePlayerId()
-        self.title = channel
-        preferences.set(channel, forKey: Constants.CurrentScreen)
+        self.title = channelName
+        preferences.set(channelName, forKey: Constants.CurrentScreen)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -97,8 +91,8 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         let key = items[indexPath[1]].key
         let post = [:] as [String : Any]
-        let statement = "statement/" + channel + "/" + key
-        let oldStatement = "old statement/" + channel + "/" + key
+        let statement = "statement/" + channelName + "/" + key
+        let oldStatement = "old statement/" + channelName + "/" + key
         let childUpdates = [statement: post, oldStatement: detailList[key] as Any] as [String : AnyObject]
         ref.updateChildValues(childUpdates)
     }
@@ -108,16 +102,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func firebaseFetching () {
-        ref.child("status").child(channel).observe(DataEventType.value) { (snapshot) in
-            if let status = snapshot.value as? String{
-                self.status = status
-                self.statusBtnOutlet.isEnabled = true
-                self.statusBtnOutlet.setTitle(status, for: .normal)
-            } else {
-                self.ref.child("status").child(self.channel).setValue("Parked")
-            }
-        }
-        ref.child("statement").child(channel).observe(DataEventType.value, with: {(snapshot) in
+        ref.child("statement").child(channelName).observe(DataEventType.value, with: {(snapshot) in
             self.keyList = []
             self.detailList = [:]
             self.items = []
@@ -138,21 +123,12 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
             self.detailTV.reloadData()
         })
         
-        ref.child("subscriber").child(self.channel).observe(DataEventType.value) { (snapshot) in
+        ref.child("subscriber").child(self.channelName).observe(DataEventType.value) { (snapshot) in
             if let subscribersObj = snapshot.value as? [String: String] {
                 for (_, value) in subscribersObj {
                     self.pushNotiUser.append(value)
                 }
             }
-        }
-    }
-    
-    func updatePlayerId() {
-        let uid = preferences.object(forKey: currentLevelKey) as! String
-        if let userId = oneSignalState.subscriptionStatus.userId {
-            let value = userId
-            let updates = [uid: value]
-            self.ref.child("subscriber").child(self.channel).updateChildValues(updates)
         }
     }
     

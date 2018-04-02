@@ -18,6 +18,9 @@
 		CE449C591F92499400DCC08B /* StatementCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE449C571F92499400DCC08B /* StatementCellTableViewCell.swift */; };
 		CE449C5A1F92499400DCC08B /* StatementCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE449C581F92499400DCC08B /* StatementCellTableViewCell.xib */; };
 		CE4AD9212070BAEC00411E8E /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD9202070BAEC00411E8E /* MyViewController.swift */; };
+		CE4AD92320726C8100411E8E /* CommonFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD92220726C8100411E8E /* CommonFunction.swift */; };
+		CE4AD925207295B900411E8E /* ChannelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD924207295B900411E8E /* ChannelTableViewCell.swift */; };
+		CE4AD9272072981D00411E8E /* StatementAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD9262072981D00411E8E /* StatementAlertViewController.swift */; };
 		CE64A29C200CDDC70075A08A /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64A29B200CDDC70075A08A /* MainNavigationViewController.swift */; };
 		CE64A2A0200CE02B0075A08A /* ChannelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64A29F200CE02B0075A08A /* ChannelTableViewController.swift */; };
 		CE64A2A2200CEDC90075A08A /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64A2A1200CEDC90075A08A /* Channels.swift */; };
@@ -90,6 +93,9 @@
 		CE449C601F9288F000DCC08B /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		CE449C621F9288F000DCC08B /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		CE4AD9202070BAEC00411E8E /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		CE4AD92220726C8100411E8E /* CommonFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunction.swift; sourceTree = "<group>"; };
+		CE4AD924207295B900411E8E /* ChannelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewCell.swift; sourceTree = "<group>"; };
+		CE4AD9262072981D00411E8E /* StatementAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementAlertViewController.swift; sourceTree = "<group>"; };
 		CE64A29B200CDDC70075A08A /* MainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		CE64A29F200CE02B0075A08A /* ChannelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableViewController.swift; sourceTree = "<group>"; };
 		CE64A2A1200CEDC90075A08A /* Channels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channels.swift; sourceTree = "<group>"; };
@@ -188,6 +194,7 @@
 				CE64A2A1200CEDC90075A08A /* Channels.swift */,
 				CEE6AA721FE6B85400C99585 /* Statement.swift */,
 				CE25CF352013A56800FB1AFC /* Constants.swift */,
+				CE4AD92220726C8100411E8E /* CommonFunction.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -200,6 +207,7 @@
 				CE449C551F922D7500DCC08B /* DetailViewController.swift */,
 				CE64A29B200CDDC70075A08A /* MainNavigationViewController.swift */,
 				CE4AD9202070BAEC00411E8E /* MyViewController.swift */,
+				CE4AD9262072981D00411E8E /* StatementAlertViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				CE449C571F92499400DCC08B /* StatementCellTableViewCell.swift */,
+				CE4AD924207295B900411E8E /* ChannelTableViewCell.swift */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -689,15 +698,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE449C561F922D7500DCC08B /* DetailViewController.swift in Sources */,
+				CE4AD92320726C8100411E8E /* CommonFunction.swift in Sources */,
 				CE64A2A2200CEDC90075A08A /* Channels.swift in Sources */,
 				CE64A29C200CDDC70075A08A /* MainNavigationViewController.swift in Sources */,
 				CE64A2A0200CE02B0075A08A /* ChannelTableViewController.swift in Sources */,
+				CE4AD925207295B900411E8E /* ChannelTableViewCell.swift in Sources */,
 				CECC67EA1F9217D700172EBB /* ViewController.swift in Sources */,
 				CE449C591F92499400DCC08B /* StatementCellTableViewCell.swift in Sources */,
 				CECC67E81F9217D700172EBB /* AppDelegate.swift in Sources */,
 				CEE6AA731FE6B85400C99585 /* Statement.swift in Sources */,
 				CE4AD9212070BAEC00411E8E /* MyViewController.swift in Sources */,
 				CE25CF362013A56800FB1AFC /* Constants.swift in Sources */,
+				CE4AD9272072981D00411E8E /* StatementAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

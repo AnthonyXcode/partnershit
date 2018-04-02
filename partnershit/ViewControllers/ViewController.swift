@@ -15,7 +15,6 @@ import FacebookCore
 class ViewController: UIViewController {
     
     let preferences = UserDefaults.standard
-    let currentLevelKey = "levelKey"
 
     @IBOutlet var nameTxt: UITextField!
     @IBOutlet weak var accountTxt: UITextField!
@@ -43,7 +42,7 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         Auth.auth().addStateDidChangeListener{(auth, user) in
             if let u = user {
-                self.preferences.set(u.uid, forKey: self.currentLevelKey)
+                self.preferences.set(u.uid, forKey: Constants.uid)
                 if let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainTabbar")
                 {
                     self.showDetailViewController(vc, sender: self)
@@ -73,8 +72,8 @@ class ViewController: UIViewController {
                             alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
                             self.present(alert, animated: true, completion: nil)
                         } else {
-                            self.preferences.set(email, forKey: "USER_EMAIL")
-                            self.preferences.set(name, forKey: "USER_NAME")
+                            self.preferences.set(email, forKey: Constants.Email)
+                            self.preferences.set(name, forKey: Constants.UserName)
                         }
                     }
                 }
@@ -96,8 +95,8 @@ class ViewController: UIViewController {
                 if let data = result.dictionaryValue {
                     let email = data["email"] as! String
                     let first_name = data["first_name"] as! String
-                    self.preferences.set(email, forKey: "USER_EMAIL")
-                    self.preferences.set(first_name, forKey: "USER_NAME")
+                    self.preferences.set(email, forKey: Constants.Email)
+                    self.preferences.set(first_name, forKey: Constants.UserName)
                 }
             }
         })

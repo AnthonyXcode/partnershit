@@ -11,4 +11,5 @@ import RealmSwift
 
 class ChannelsObject: Object {
     @objc dynamic var name = ""
+    @objc dynamic var id = ""
 }

@@ -15,13 +15,14 @@ import OneSignal
 class ChannelTableViewController: UITableViewController {
     
     @IBOutlet var channelsTableView: UITableView!
-    var channels = [String]()
+    var channels = [String: String]()
     let realm = try! Realm()
     var ref: DatabaseReference! = Database.database().reference()
+    let oneSignalState: OSPermissionSubscriptionState = OneSignal.getPermissionSubscriptionState()
     var uid: String! = ""
+    var userName: String! = ""
     
     let preferences = UserDefaults.standard
-    let currentLevelKey = "levelKey"
     
     @IBAction func addChannelBtn(_ sender: Any) {
         let alert = UIAlertController(title:"請選擇", message: nil, preferredStyle: .alert)
@@ -32,49 +33,6 @@ class ChannelTableViewController: UITableViewController {
             self.joinChannelAlert()
         }))
         alert.addAction(UIAlertAction(title: "取消", style: .cancel))
-//        alert.addTextField { (textField) in
-//            textField.placeholder = "頻道名稱"
-//        }
-//        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        // 3. Grab the value from the text field, and print it when the user clicks OK.
-//        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak alert] (_) in
-//            let textField = alert?.textFields![0]
-//            var isUnique = false
-//            for channelName in self.channels {
-//                if channelName == textField!.text {
-//                    isUnique = true
-//                }
-//            }
-//            if (!isUnique){
-//                let channel = ChannelsObject()
-//                channel.name = textField!.text!
-//                try! self.realm.write {
-//                    self.realm.add(channel)
-//                }
-//                self.channels.append(channel.name)
-//                self.channelsTableView.reloadData()
-//                self.ref.child("users").child(self.uid).child("channels").updateChildValues([channel.name: true])
-//            }
-//        }))
-
-        self.present(alert, animated: true, completion: nil)
-    }
-    
-    func addChannelAlert() {
-        let alert = UIAlertController(title: "新增頻道", message: "請輸入頻道名稱", preferredStyle: .alert)
-        alert.addTextField { (textField) in textField.placeholder = "頻道名稱"}
-        alert.addAction(UIAlertAction(title: "取消", style: .cancel))
-        alert.addAction(UIAlertAction(title: "確定", style: .default, handler: {(_) in
-        }))
-        self.present(alert, animated: true, completion: nil)
-    }
-    
-    func joinChannelAlert() {
-        let alert = UIAlertController(title: "加入頻道", message: "請輸入頻道代碼", preferredStyle: .alert)
-        alert.addTextField { (textField) in textField.placeholder = "頻道代碼"}
-        alert.addAction(UIAlertAction(title: "取消", style: .cancel))
-        alert.addAction(UIAlertAction(title: "確定", style: .default, handler: {(_) in
-        }))
         self.present(alert, animated: true, completion: nil)
     }
     
@@ -82,15 +40,11 @@ class ChannelTableViewController: UITableViewController {
         super.viewDidLoad()
         let realmChannels = realm.objects(ChannelsObject.self)
         for obj in realmChannels {
-            channels.append(obj.name)
+            channels[obj.id] = obj.name
         }
-        uid = preferences.object(forKey: currentLevelKey) as! String
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        if let detailScreen = preferences.string(forKey: Constants.CurrentScreen) {
-            self.performSegue(withIdentifier: "ToDetailSegue", sender: detailScreen)
-        }
+        uid = preferences.object(forKey: Constants.uid) as! String
+        userName = preferences.object(forKey: Constants.UserName) as! String
+        firebaseFetching()
     }
 
     override func didReceiveMemoryWarning() {
@@ -111,36 +65,113 @@ class ChannelTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ChannelItem", for: indexPath)
-        cell.textLabel?.text = channels[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ChannelItem", for: indexPath) as! ChannelTableViewCell
+        let channelId = Array(channels.keys)[indexPath.row]
+        cell.channelName.text = channels[channelId]
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "ToDetailSegue", sender: self.channels[indexPath.row])
+        let channelId = Array(channels.keys)[indexPath.row]
+        let channel = [channelId: channels[channelId]]
+        self.performSegue(withIdentifier: "ToDetailSegue", sender: channel)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let detailView = segue.destination as? DetailViewController {
-            detailView.channel = sender as! String
+            for (id, name) in (sender as? [String: String])! {
+                detailView.channelName = name
+                detailView.channelId = id
+            }
         }
     }
 
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
-            let channel = realm.objects(ChannelsObject.self).filter("name == %@", channels[indexPath.row])
+            let channelId = Array(channels.keys)[indexPath.row]
+            let channel = realm.objects(ChannelsObject.self).filter("id == %@", channelId)
             try! realm.write {
                 realm.delete(channel)
             }
-            self.ref.child("users").child(self.uid).child("channels").updateChildValues([channels[indexPath.row]: false])
-            OneSignal.deleteTag(channels[indexPath.row])
-            channels.remove(at: indexPath.row)
+            self.ref.child("users").child(self.uid).child("channels").child(channelId).removeValue()
+            self.removeSubscriber(channelId: channelId)
+            channels.removeValue(forKey: channelId)
             channelsTableView.deleteRows(at: [indexPath], with: .automatic)
         } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }
+    }
+    
+    func addChannelAlert() {
+        let alert = UIAlertController(title: "新增頻道", message: "請輸入頻道名稱", preferredStyle: .alert)
+        alert.addTextField { (textField) in textField.placeholder = "頻道名稱"}
+        alert.addAction(UIAlertAction(title: "取消", style: .cancel))
+        alert.addAction(UIAlertAction(title: "確定", style: .default, handler: {(_) in
+            let textField = alert.textFields![0]
+            if let channelName = textField.text {
+                self.addChannel(channelName: channelName)
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func joinChannelAlert() {
+        let alert = UIAlertController(title: "加入頻道", message: "請輸入頻道代碼", preferredStyle: .alert)
+        alert.addTextField { (textField) in textField.placeholder = "頻道代碼"}
+        alert.addAction(UIAlertAction(title: "取消", style: .cancel))
+        alert.addAction(UIAlertAction(title: "確定", style: .default, handler: {(_) in
+            let textField = alert.textFields![0]
+            if let channelId = textField.text {
+                self.joinChannel(channelId: channelId)
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func addChannel(channelName: String) {
+        let channelId = CommonFunction.randomString(length: 5)
+        self.ref.child("users").child(self.uid).child("channels").updateChildValues([channelId: channelName])
+        self.ref.child("channels").child(channelId).updateChildValues(["name": channelName])
+        self.newSubscriber(channelId: channelId)
+    }
+    
+    func joinChannel (channelId: String) {
+        ref.child("channels").child(channelId).observeSingleEvent(of: .value, with: { (snapshot) in
+            if let value = snapshot.value as? NSDictionary {
+                print(value)
+                let channelName = value["name"] as! String
+                self.ref.child("users").child(self.uid).child("channels").updateChildValues([channelId: channelName])
+                self.newSubscriber(channelId: channelId)
+            }
+        })
+    }
+    
+    func newSubscriber (channelId: String) {
+        if let userId = oneSignalState.subscriptionStatus.userId {
+            self.ref.child("subscriber").child(channelId).updateChildValues([self.uid: userId])
+        }
+    }
+    
+    func removeSubscriber(channelId: String) {
+        self.ref.child("subscriber").child(channelId).child(self.uid).removeValue()
+    }
+    
+    func firebaseFetching () {
+        self.ref.child("users").child(self.uid).child("detail").updateChildValues(["user_name": self.userName])
+        self.ref.child("users").child(self.uid).child("channels").observe(.value, with: { (snapshot) in
+            if let value = snapshot.value as? NSDictionary {
+                for (id, name) in value {
+                    self.channels[id as! String] = name as? String
+                    let channel = ChannelsObject()
+                    channel.id = id as! String
+                    channel.name = name as! String
+                    try! self.realm.write {
+                        self.realm.add(channel)
+                    }
+                    self.channelsTableView.reloadData()
+                }
+            }
+        })
     }
 
 }
