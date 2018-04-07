@@ -11,6 +11,10 @@ import UIKit
 class ChannelTableViewCell: UITableViewCell {
 
     @IBOutlet var channelName: UILabel!
+    @IBOutlet weak var channelCodeBtn: UIButton!
+    @IBAction func channelCodeBtn(_ sender: Any) {
+        UIPasteboard.general.string = self.channelCodeBtn.currentTitle
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

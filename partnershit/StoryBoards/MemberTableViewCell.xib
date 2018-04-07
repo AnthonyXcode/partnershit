@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="memberCell" rowHeight="57" id="KGk-i7-Jjw" customClass="MemberTableViewCell" customModule="partnershit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="56.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lE-Rw-D9W">
+                        <rect key="frame" x="0.0" y="4" width="320" height="30.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxM-OS-734">
+                                <rect key="frame" x="8" y="8" width="304" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73333333333333328" green="0.87058823529411766" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="AxM-OS-734" firstAttribute="leading" secondItem="5lE-Rw-D9W" secondAttribute="leading" constant="8" id="E0u-Vf-aH9"/>
+                            <constraint firstAttribute="trailing" secondItem="AxM-OS-734" secondAttribute="trailing" constant="8" id="EyP-0h-GEd"/>
+                            <constraint firstItem="AxM-OS-734" firstAttribute="top" secondItem="5lE-Rw-D9W" secondAttribute="top" constant="8" id="hHq-MV-zeN"/>
+                            <constraint firstAttribute="height" constant="30.5" id="yol-jW-J7x"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5lE-Rw-D9W" secondAttribute="trailing" id="9R3-fA-Rro"/>
+                    <constraint firstItem="5lE-Rw-D9W" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dcA-4j-JZb"/>
+                    <constraint firstItem="5lE-Rw-D9W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="sCd-VS-UcE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="5lE-Rw-D9W" id="Iv9-xZ-y1a"/>
+                <outlet property="nameTxt" destination="AxM-OS-734" id="lBj-z8-VrJ"/>
+            </connections>
+            <point key="canvasLocation" x="102" y="60.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -10,6 +10,8 @@ import Foundation
 
 class StatementObject {
     var date = String()
+    var senderId = String()
+    var senderName = String()
     var message = String()
     var price = String()
     var key = String()

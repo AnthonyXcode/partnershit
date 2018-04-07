@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class StatementAlertViewController: UIViewController {
 
@@ -14,10 +15,18 @@ class StatementAlertViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     @IBAction func okBtn(_ sender: Any) {
+        self.addStatement()
     }
     @IBOutlet var messageTxt: UITextField!
     @IBOutlet var priceTxt: UITextField!
     @IBOutlet var datePicker: UIDatePicker!
+    
+    var ref: DatabaseReference! = Database.database().reference()
+    let preferences = UserDefaults.standard
+    
+    var userName = ""
+    var userId = ""
+    var channelId = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,16 +39,19 @@ class StatementAlertViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func addStatement() {
+        let msg = messageTxt.text
+        let price = priceTxt.text
+        if (price != "") {
+            let dateFormater = DateFormatter()
+            dateFormater.dateFormat = "yyyy-MM-dd-HH-mm-ss"
+            let dateString = dateFormater.string(from: datePicker.date)
+            let key = ref.childByAutoId().key
+            let post = ["date": dateString, "price": price, "message": msg, "sender_name": self.userName, "sender_id": self.userId]
+            let childUpdates = ["statement/" + channelId + "/" + key: post]
+            self.ref.updateChildValues(childUpdates)
+            self.dismiss(animated: true, completion: nil)
+        }
     }
-    */
-
 }

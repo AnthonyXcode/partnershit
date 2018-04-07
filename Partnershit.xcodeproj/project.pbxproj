@@ -11,6 +11,13 @@
 		822D8B91C7DE8B916F56E07B /* Pods_partnershit_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E212589E09735B1EC4DA2AD /* Pods_partnershit_OneSignalNotificationServiceExtension.framework */; };
 		C86EC2980546E13124481F9B /* Pods_partnershit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E303A3D725DF861817FE194 /* Pods_partnershit.framework */; };
 		CE25CF362013A56800FB1AFC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE25CF352013A56800FB1AFC /* Constants.swift */; };
+		CE31FBD6207339C400695DAE /* InfoAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31FBD5207339C400695DAE /* InfoAlertViewController.swift */; };
+		CE31FBDA2073413800695DAE /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31FBD92073413800695DAE /* Member.swift */; };
+		CE31FBDC2073414F00695DAE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31FBDB2073414F00695DAE /* Message.swift */; };
+		CE31FBE7207350F000695DAE /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31FBE5207350F000695DAE /* MemberTableViewCell.swift */; };
+		CE31FBE8207350F000695DAE /* MemberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE31FBE6207350F000695DAE /* MemberTableViewCell.xib */; };
+		CE31FBEB207353D700695DAE /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31FBE9207353D700695DAE /* MessageTableViewCell.swift */; };
+		CE31FBEC207353D700695DAE /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE31FBEA207353D700695DAE /* MessageTableViewCell.xib */; };
 		CE449C521F921C1D00DCC08B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE449C511F92196F00DCC08B /* GoogleService-Info.plist */; };
 		CE449C531F921C2100DCC08B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE449C511F92196F00DCC08B /* GoogleService-Info.plist */; };
 		CE449C541F921C2200DCC08B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE449C511F92196F00DCC08B /* GoogleService-Info.plist */; };
@@ -86,6 +93,13 @@
 		7E212589E09735B1EC4DA2AD /* Pods_partnershit_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_partnershit_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85F98CCFA224C5CA9D6F5DFB /* Pods-partnershitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-partnershitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-partnershitUITests/Pods-partnershitUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CE25CF352013A56800FB1AFC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CE31FBD5207339C400695DAE /* InfoAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoAlertViewController.swift; sourceTree = "<group>"; };
+		CE31FBD92073413800695DAE /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		CE31FBDB2073414F00695DAE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CE31FBE5207350F000695DAE /* MemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
+		CE31FBE6207350F000695DAE /* MemberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberTableViewCell.xib; sourceTree = "<group>"; };
+		CE31FBE9207353D700695DAE /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		CE31FBEA207353D700695DAE /* MessageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
 		CE449C511F92196F00DCC08B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		CE449C551F922D7500DCC08B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CE449C571F92499400DCC08B /* StatementCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatementCellTableViewCell.swift; sourceTree = "<group>"; };
@@ -195,6 +209,8 @@
 				CEE6AA721FE6B85400C99585 /* Statement.swift */,
 				CE25CF352013A56800FB1AFC /* Constants.swift */,
 				CE4AD92220726C8100411E8E /* CommonFunction.swift */,
+				CE31FBD92073413800695DAE /* Member.swift */,
+				CE31FBDB2073414F00695DAE /* Message.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -208,6 +224,7 @@
 				CE64A29B200CDDC70075A08A /* MainNavigationViewController.swift */,
 				CE4AD9202070BAEC00411E8E /* MyViewController.swift */,
 				CE4AD9262072981D00411E8E /* StatementAlertViewController.swift */,
+				CE31FBD5207339C400695DAE /* InfoAlertViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -215,9 +232,11 @@
 		CE64A2A5200CFA6F0075A08A /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				CE31FBE6207350F000695DAE /* MemberTableViewCell.xib */,
 				CECC67EB1F9217D700172EBB /* Main.storyboard */,
 				CE449C581F92499400DCC08B /* StatementCellTableViewCell.xib */,
 				CECC67F01F9217D700172EBB /* LaunchScreen.storyboard */,
+				CE31FBEA207353D700695DAE /* MessageTableViewCell.xib */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -227,6 +246,8 @@
 			children = (
 				CE449C571F92499400DCC08B /* StatementCellTableViewCell.swift */,
 				CE4AD924207295B900411E8E /* ChannelTableViewCell.swift */,
+				CE31FBE5207350F000695DAE /* MemberTableViewCell.swift */,
+				CE31FBE9207353D700695DAE /* MessageTableViewCell.swift */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -456,9 +477,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECC67F21F9217D700172EBB /* LaunchScreen.storyboard in Resources */,
+				CE31FBE8207350F000695DAE /* MemberTableViewCell.xib in Resources */,
 				CE449C521F921C1D00DCC08B /* GoogleService-Info.plist in Resources */,
 				CE449C5A1F92499400DCC08B /* StatementCellTableViewCell.xib in Resources */,
 				CECC67EF1F9217D700172EBB /* Assets.xcassets in Resources */,
+				CE31FBEC207353D700695DAE /* MessageTableViewCell.xib in Resources */,
 				CECC67ED1F9217D700172EBB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -698,16 +721,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE449C561F922D7500DCC08B /* DetailViewController.swift in Sources */,
+				CE31FBD6207339C400695DAE /* InfoAlertViewController.swift in Sources */,
 				CE4AD92320726C8100411E8E /* CommonFunction.swift in Sources */,
 				CE64A2A2200CEDC90075A08A /* Channels.swift in Sources */,
+				CE31FBDA2073413800695DAE /* Member.swift in Sources */,
 				CE64A29C200CDDC70075A08A /* MainNavigationViewController.swift in Sources */,
 				CE64A2A0200CE02B0075A08A /* ChannelTableViewController.swift in Sources */,
 				CE4AD925207295B900411E8E /* ChannelTableViewCell.swift in Sources */,
 				CECC67EA1F9217D700172EBB /* ViewController.swift in Sources */,
 				CE449C591F92499400DCC08B /* StatementCellTableViewCell.swift in Sources */,
+				CE31FBE7207350F000695DAE /* MemberTableViewCell.swift in Sources */,
+				CE31FBEB207353D700695DAE /* MessageTableViewCell.swift in Sources */,
 				CECC67E81F9217D700172EBB /* AppDelegate.swift in Sources */,
 				CEE6AA731FE6B85400C99585 /* Statement.swift in Sources */,
 				CE4AD9212070BAEC00411E8E /* MyViewController.swift in Sources */,
+				CE31FBDC2073414F00695DAE /* Message.swift in Sources */,
 				CE25CF362013A56800FB1AFC /* Constants.swift in Sources */,
 				CE4AD9272072981D00411E8E /* StatementAlertViewController.swift in Sources */,
 			);

@@ -13,34 +13,33 @@ import Firebase
 
 class DetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var detailTV: UITableView!
-    @IBOutlet weak var datePicker: UIDatePicker!
-    @IBOutlet weak var msgTxt: UITextField!
-    @IBOutlet weak var priceTxt: UITextField!
-    @IBAction func sendBtn(_ sender: Any) {
-//        let key = ref.child("statement").childByAutoId().key
-//        let dateFormater = DateFormatter()
-//        dateFormater.dateFormat = "yyyy-MM-dd"
-//        let dateString = dateFormater.string(from: datePicker.date)
-//        var message = name
-//        if (msgTxt.text != ""){
-//            message = name + ": " + msgTxt.text!
-//        }
-//        let post = ["date": dateString, "price":priceTxt.text, "message": message] as [String : Any]
-//        let childUpdates = ["statement/" + channelName + "/" + key: post]
-//        ref.updateChildValues(childUpdates)
+    @IBAction func infoBtn(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let alert = storyboard.instantiateViewController(withIdentifier: "addStatementAlert")
+        let alert = storyboard.instantiateViewController(withIdentifier: "infoAlert") as! InfoAlertViewController
         alert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
         alert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        alert.userName = userName
+        alert.userId = userId
+        alert.channelId = channelId
+        self.present(alert, animated: true, completion: nil)
+    }
+    @IBAction func newBtn(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let alert = storyboard.instantiateViewController(withIdentifier: "addStatementAlert") as! StatementAlertViewController
+        alert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+        alert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        alert.channelId = self.channelId
+        alert.userName = userName
+        alert.userId = userId
         self.present(alert, animated: true, completion: nil)
     }
     
     var ref: DatabaseReference! = Database.database().reference()
     var detailList = [String: AnyObject]()
     var keyList = [String]()
-    var pushNotiUser = [String]()
     var status: String! = ""
-    var name: String! = ""
+    var userName: String! = ""
+    var userId: String! = ""
     var items = [StatementObject]()
     let oneSignalState: OSPermissionSubscriptionState = OneSignal.getPermissionSubscriptionState()
     var channelName = ""
@@ -54,13 +53,13 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
         firebaseFetching()
         let nib = UINib(nibName: "StatementCellTableViewCell", bundle: nil)
         detailTV.register(nib, forCellReuseIdentifier: "Cell")
-        if let email = preferences.string(forKey: "USER_EMAIL") {
-            name = email
+        if let name = preferences.string(forKey: Constants.UserName) {
+            userName = name
         }
-        hideKeyboardWhenTappedAround()
-        resizeViewForKeyboard()
+        if let uid = preferences.string(forKey: Constants.uid) {
+            userId = uid
+        }
         self.title = channelName
-        preferences.set(channelName, forKey: Constants.CurrentScreen)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -82,17 +81,18 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = detailTV.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! StatementCellTableViewCell
-        cell.dateTxt.text = items[indexPath[1]].date
+        cell.dateTxt.text = String(items[indexPath[1]].date.prefix(10))
         cell.msgTxt.text = items[indexPath[1]].message
-        cell.priceTxt.text = items[indexPath[1]].price
+        cell.priceTxt.text = "$" + items[indexPath[1]].price
+        cell.nameTxt.text = items[indexPath[1]].senderName
         return cell
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         let key = items[indexPath[1]].key
         let post = [:] as [String : Any]
-        let statement = "statement/" + channelName + "/" + key
-        let oldStatement = "old statement/" + channelName + "/" + key
+        let statement = "statement/" + channelId + "/" + key
+        let oldStatement = "old statement/" + channelId + "/" + key
         let childUpdates = [statement: post, oldStatement: detailList[key] as Any] as [String : AnyObject]
         ref.updateChildValues(childUpdates)
     }
@@ -102,7 +102,7 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func firebaseFetching () {
-        ref.child("statement").child(channelName).observe(DataEventType.value, with: {(snapshot) in
+        ref.child("statement").child(channelId).observe(DataEventType.value, with: {(snapshot) in
             self.keyList = []
             self.detailList = [:]
             self.items = []
@@ -112,6 +112,8 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
                     object.date = value["date"] as! String
                     object.message = value["message"] as! String
                     object.price = value["price"] as! String
+                    object.senderId = value["sender_id"] as! String
+                    object.senderName = value["sender_name"] as! String
                     object.key = key
                     self.items.append(object)
                     self.keyList.append(key)
@@ -122,14 +124,10 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
             
             self.detailTV.reloadData()
         })
-        
-        ref.child("subscriber").child(self.channelName).observe(DataEventType.value) { (snapshot) in
-            if let subscribersObj = snapshot.value as? [String: String] {
-                for (_, value) in subscribersObj {
-                    self.pushNotiUser.append(value)
-                }
-            }
-        }
+    }
+    
+    @objc func dismissAlertController(){
+        self.dismiss(animated: true, completion: nil)
     }
     
     /*

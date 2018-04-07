@@ -26,10 +26,10 @@ class ChannelTableViewController: UITableViewController {
     
     @IBAction func addChannelBtn(_ sender: Any) {
         let alert = UIAlertController(title:"請選擇", message: nil, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "新增頻道", style: .default, handler: {(_) in
+        alert.addAction(UIAlertAction(title: "新增帳薄", style: .default, handler: {(_) in
             self.addChannelAlert()
         }))
-        alert.addAction(UIAlertAction(title: "加入頻道", style: .default, handler: {(_) in
+        alert.addAction(UIAlertAction(title: "加入帳薄", style: .default, handler: {(_) in
             self.joinChannelAlert()
         }))
         alert.addAction(UIAlertAction(title: "取消", style: .cancel))
@@ -45,6 +45,10 @@ class ChannelTableViewController: UITableViewController {
         uid = preferences.object(forKey: Constants.uid) as! String
         userName = preferences.object(forKey: Constants.UserName) as! String
         firebaseFetching()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {
@@ -68,6 +72,7 @@ class ChannelTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChannelItem", for: indexPath) as! ChannelTableViewCell
         let channelId = Array(channels.keys)[indexPath.row]
         cell.channelName.text = channels[channelId]
+        cell.channelCodeBtn.setTitle(channelId, for: .normal)
         return cell
     }
     
@@ -103,8 +108,8 @@ class ChannelTableViewController: UITableViewController {
     }
     
     func addChannelAlert() {
-        let alert = UIAlertController(title: "新增頻道", message: "請輸入頻道名稱", preferredStyle: .alert)
-        alert.addTextField { (textField) in textField.placeholder = "頻道名稱"}
+        let alert = UIAlertController(title: "新增帳薄", message: "請輸入帳薄名稱", preferredStyle: .alert)
+        alert.addTextField { (textField) in textField.placeholder = "帳薄名稱"}
         alert.addAction(UIAlertAction(title: "取消", style: .cancel))
         alert.addAction(UIAlertAction(title: "確定", style: .default, handler: {(_) in
             let textField = alert.textFields![0]
@@ -116,8 +121,8 @@ class ChannelTableViewController: UITableViewController {
     }
     
     func joinChannelAlert() {
-        let alert = UIAlertController(title: "加入頻道", message: "請輸入頻道代碼", preferredStyle: .alert)
-        alert.addTextField { (textField) in textField.placeholder = "頻道代碼"}
+        let alert = UIAlertController(title: "加入帳薄", message: "請輸入帳薄代碼", preferredStyle: .alert)
+        alert.addTextField { (textField) in textField.placeholder = "帳薄代碼"}
         alert.addAction(UIAlertAction(title: "取消", style: .cancel))
         alert.addAction(UIAlertAction(title: "確定", style: .default, handler: {(_) in
             let textField = alert.textFields![0]
@@ -148,7 +153,7 @@ class ChannelTableViewController: UITableViewController {
     
     func newSubscriber (channelId: String) {
         if let userId = oneSignalState.subscriptionStatus.userId {
-            self.ref.child("subscriber").child(channelId).updateChildValues([self.uid: userId])
+            self.ref.child("subscriber").child(channelId).child(self.uid).updateChildValues(["onesignal_id": userId, "user_name": self.userName])
         }
     }
     

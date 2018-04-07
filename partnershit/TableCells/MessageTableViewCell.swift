@@ -1,19 +1,19 @@
 //
-//  StatementCellTableViewCell.swift
+//  MessageTableViewCell.swift
 //  partnershit
 //
-//  Created by user on 14/10/2017.
-//  Copyright © 2017 AnthonyChan. All rights reserved.
+//  Created by user on 3/4/2018.
+//  Copyright © 2018 AnthonyChan. All rights reserved.
 //
 
 import UIKit
 
-class StatementCellTableViewCell: UITableViewCell {
+class MessageTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var dateTxt: UILabel!
-    @IBOutlet weak var msgTxt: UILabel!
-    @IBOutlet weak var priceTxt: UILabel!
     @IBOutlet weak var nameTxt: UILabel!
+    @IBOutlet weak var msgTxt: UILabel!
+    @IBOutlet weak var dateTxt: UILabel!
+    @IBOutlet weak var containerView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

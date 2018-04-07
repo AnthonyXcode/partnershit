@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:partnershit/ViewControllers/InfoAlertViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:Partnershit.xcodeproj">
    </FileRef>
    <FileRef
