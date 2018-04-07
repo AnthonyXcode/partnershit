@@ -33,6 +33,8 @@
 		CE64A2A2200CEDC90075A08A /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE64A2A1200CEDC90075A08A /* Channels.swift */; };
 		CE9BC8BB206FD31E00BA28CC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9BC8BC206FD31E00BA28CC /* FBSDKLoginKit.framework */; };
 		CEA6A5D51F9334F500C99407 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA6A5D41F9334F500C99407 /* NotificationService.swift */; };
+		CEC53D5C2079108000F6F090 /* SwiftMessages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC53D5B2079108000F6F090 /* SwiftMessages.framework */; };
+		CEC53D5E207921B200F6F090 /* ArchiveTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC53D5D207921B200F6F090 /* ArchiveTableViewController.swift */; };
 		CECC67E81F9217D700172EBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC67E71F9217D700172EBB /* AppDelegate.swift */; };
 		CECC67EA1F9217D700172EBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECC67E91F9217D700172EBB /* ViewController.swift */; };
 		CECC67ED1F9217D700172EBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECC67EB1F9217D700172EBB /* Main.storyboard */; };
@@ -118,6 +120,8 @@
 		CEA6A5D21F9334F500C99407 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA6A5D41F9334F500C99407 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		CEA6A5D61F9334F500C99407 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC53D5B2079108000F6F090 /* SwiftMessages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftMessages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC53D5D207921B200F6F090 /* ArchiveTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveTableViewController.swift; sourceTree = "<group>"; };
 		CECC67E41F9217D700172EBB /* partnershit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = partnershit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECC67E71F9217D700172EBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECC67E91F9217D700172EBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC53D5C2079108000F6F090 /* SwiftMessages.framework in Frameworks */,
 				CE9BC8BB206FD31E00BA28CC /* FBSDKLoginKit.framework in Frameworks */,
 				C86EC2980546E13124481F9B /* Pods_partnershit.framework in Frameworks */,
 			);
@@ -176,6 +181,7 @@
 		6B5AF37953BA1D48DC0131FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEC53D5B2079108000F6F090 /* SwiftMessages.framework */,
 				CE9BC8BC206FD31E00BA28CC /* FBSDKLoginKit.framework */,
 				CE449C601F9288F000DCC08B /* UserNotifications.framework */,
 				CE449C621F9288F000DCC08B /* UserNotificationsUI.framework */,
@@ -225,6 +231,7 @@
 				CE4AD9202070BAEC00411E8E /* MyViewController.swift */,
 				CE4AD9262072981D00411E8E /* StatementAlertViewController.swift */,
 				CE31FBD5207339C400695DAE /* InfoAlertViewController.swift */,
+				CEC53D5D207921B200F6F090 /* ArchiveTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -620,6 +627,7 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -634,6 +642,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -737,6 +746,7 @@
 				CE4AD9212070BAEC00411E8E /* MyViewController.swift in Sources */,
 				CE31FBDC2073414F00695DAE /* Message.swift in Sources */,
 				CE25CF362013A56800FB1AFC /* Constants.swift in Sources */,
+				CEC53D5E207921B200F6F090 /* ArchiveTableViewController.swift in Sources */,
 				CE4AD9272072981D00411E8E /* StatementAlertViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

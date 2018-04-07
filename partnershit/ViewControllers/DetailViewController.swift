@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import OneSignal
 import Firebase
+import SwiftMessages
 
 class DetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var detailTV: UITableView!
@@ -89,12 +90,28 @@ class DetailViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        let key = items[indexPath[1]].key
-        let post = [:] as [String : Any]
-        let statement = "statement/" + channelId + "/" + key
-        let oldStatement = "old statement/" + channelId + "/" + key
-        let childUpdates = [statement: post, oldStatement: detailList[key] as Any] as [String : AnyObject]
-        ref.updateChildValues(childUpdates)
+        let statement = self.items[indexPath[1]]
+        if (statement.senderId == self.userId) {
+            let key = statement.key
+            let post = [:] as [String : Any]
+            let statement = "statement/" + channelId + "/" + key
+            let oldStatement = "old statement/" + channelId + "/" + key
+            let childUpdates = [statement: post, oldStatement: detailList[key] as Any] as [String : AnyObject]
+            ref.updateChildValues(childUpdates)
+        } else {
+            var config = SwiftMessages.Config()
+            config.presentationStyle = .bottom
+            config.duration = .seconds(seconds: 2)
+            let view = MessageView.viewFromNib(layout: .messageView)
+            view.configureTheme(.info)
+            view.titleLabel?.isHidden = true
+            view.button?.isHidden = true
+            view.iconLabel?.isHidden = true
+            view.iconImageView?.isHidden = true
+            view.configureContent(body: "無法封存其他成員的賬目")
+            view.bodyLabel?.textColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+            SwiftMessages.show(config: config, view: view)
+        }
     }
     
     func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {

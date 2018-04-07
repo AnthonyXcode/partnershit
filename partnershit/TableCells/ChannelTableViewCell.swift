@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftMessages
 
 class ChannelTableViewCell: UITableViewCell {
 
@@ -14,6 +15,7 @@ class ChannelTableViewCell: UITableViewCell {
     @IBOutlet weak var channelCodeBtn: UIButton!
     @IBAction func channelCodeBtn(_ sender: Any) {
         UIPasteboard.general.string = self.channelCodeBtn.currentTitle
+        self.showCopyDialog(code: self.channelCodeBtn.currentTitle as! String)
     }
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +26,21 @@ class ChannelTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func showCopyDialog(code: String) {
+        var config = SwiftMessages.Config()
+        config.presentationStyle = .bottom
+        config.duration = .seconds(seconds: 2)
+        let view = MessageView.viewFromNib(layout: .messageView)
+        view.configureTheme(.info)
+        view.titleLabel?.isHidden = true
+        view.button?.isHidden = true
+        view.iconLabel?.isHidden = true
+        view.iconImageView?.isHidden = true
+        view.configureContent(body: "已複製 " + code)
+        view.bodyLabel?.textColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        SwiftMessages.show(config: config, view: view)
     }
 
 }
