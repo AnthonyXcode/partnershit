@@ -30,8 +30,6 @@ class StatementAlertViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideKeyboardWhenTappedAround()
-        resizeViewForKeyboard()
         // Do any additional setup after loading the view.
     }
 

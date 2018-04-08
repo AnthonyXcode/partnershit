@@ -54,6 +54,7 @@ PODS:
     - GoogleToolboxForMac/NSString+URLArguments (= 2.1.3)
   - GoogleToolboxForMac/NSString+URLArguments (2.1.3)
   - GTMSessionFetcher/Core (1.1.12)
+  - IQKeyboardManagerSwift (5.0.0)
   - leveldb-library (1.18.3)
   - nanopb (0.3.8):
     - nanopb/decode (= 0.3.8)
@@ -74,6 +75,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - IQKeyboardManagerSwift (= 5.0.0)
   - OneSignal (< 3.0, >= 2.5.2)
   - RealmSwift
   - SwiftMessages
@@ -92,6 +94,7 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 70c2b877e9338971b2429ea5a4293df6961aa44e
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
+  IQKeyboardManagerSwift: 3f340202ebe1a7076279b9b9b3c817243ddb3aab
   leveldb-library: 10fb39c39e243db4af1828441162405bbcec1404
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   OneSignal: 9ec286d9156b86b3975f45d928e70f46c74ef4b7
@@ -99,6 +102,6 @@ SPEC CHECKSUMS:
   RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
   SwiftMessages: 1bacc783c8f10bdfdc57c14860cae8a1f1fa6591
 
-PODFILE CHECKSUM: 642e1900944d9f9288bde0c7243111c04a2065f0
+PODFILE CHECKSUM: dc18018c4a72a9af6e6f83d0de3ee9b91c2298ac
 
 COCOAPODS: 1.3.1

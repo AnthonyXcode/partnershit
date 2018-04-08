@@ -11,10 +11,13 @@ import Firebase
 import RealmSwift
 import FacebookLogin
 import FacebookCore
+import RealmSwift
 
 class ViewController: UIViewController {
     
     let preferences = UserDefaults.standard
+    let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"]!
+    let realm = try! Realm()
 
     @IBOutlet var nameTxt: UITextField!
     @IBOutlet weak var accountTxt: UITextField!
@@ -40,12 +43,21 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        if self.preferences.string(forKey: Constants.versionCode) == nil {
+            try! Auth.auth().signOut()
+            self.preferences.set(self.version as! String, forKey: Constants.versionCode)
+        }
         Auth.auth().addStateDidChangeListener{(auth, user) in
+            print(user)
             if let u = user {
-                self.preferences.set(u.uid, forKey: Constants.uid)
-                if let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainTabbar")
-                {
-                    self.showDetailViewController(vc, sender: self)
+                if self.preferences.string(forKey: Constants.versionCode) != nil {
+                    self.preferences.set(u.uid, forKey: Constants.uid)
+                    if let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainTabbar")
+                    {
+                        self.showDetailViewController(vc, sender: self)
+                    }
+                } else {
+                    try! Auth.auth().signOut()
                 }
             }
         }
@@ -53,8 +65,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideKeyboardWhenTappedAround()
-        resizeViewForKeyboard()
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,26 +73,48 @@ class ViewController: UIViewController {
     }
     
     func login(name: String, email: String, password: String) {
-        if (name != "") {
-            Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
-                if (error != nil) {
-                    Auth.auth().signIn(withEmail: self.accountTxt.text!, password: self.pwTxt.text!) {(user, error) in
-                        if (error != nil) {
-                            let alert = UIAlertController(title: "error", message: "login or register failed", preferredStyle: UIAlertControllerStyle.alert)
-                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                            self.present(alert, animated: true, completion: nil)
-                        } else {
-                            self.preferences.set(email, forKey: Constants.Email)
-                            self.preferences.set(name, forKey: Constants.UserName)
-                        }
-                    }
+        if (name == "") {
+            let alert = UIAlertController(title: "錯誤", message: "請輸入用戶名稱", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        if (password.count < 8) {
+            let alert = UIAlertController(title: "錯誤", message: "密碼長度不足", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return
+        }
+        
+        self.preferences.set(email, forKey: Constants.Email)
+        self.preferences.set(name, forKey: Constants.UserName)
+        
+        Auth.auth().signIn(withEmail: email, password: password, completion: {(user, error) in
+            if (error != nil) {
+                let errorCode = (error! as NSError).code
+                if (errorCode == 17011) {
+                    print(errorCode)
+                    self.createAccAndSignIn(email: email, password: password, name: name)
+                } else {
+                    let alert = UIAlertController(title: "錯誤", message: "登入失敗", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
-        } else {
-            let alert = UIAlertController(title: "error", message: "Please choose a user name", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
+        })
+    }
+    
+    func createAccAndSignIn(email: String, password: String, name: String) {
+        Auth.auth().createUser(withEmail: email, password: password, completion: {(user, error) in
+            if (error != nil) {
+                let alert = UIAlertController(title: "錯誤", message: "新增賬號失敗", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
+            } else {
+                self.login(name: name, email: email, password: password)
+            }
+        })
     }
     
     func getFbProfile(token: AccessToken) {
@@ -102,49 +134,3 @@ class ViewController: UIViewController {
         })
     }
 }
-
-extension UIViewController {
-    func resizeViewForKeyboard() {
-        NotificationCenter.default.addObserver(self, selector: #selector(UIViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        
-        NotificationCenter.default.addObserver(self, selector: #selector(UIViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-    }
-    
-    func hideKeyboardWhenTappedAround() {
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
-    
-    @objc func keyboardWillShow(notification: NSNotification) {
-        if let keyboardFrame: NSValue = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue {
-            let keyboardRectangle = keyboardFrame.cgRectValue
-            let keyboardHeight = keyboardRectangle.height
-            if (view.frame.origin.y != 0){
-                view.frame.origin.y = 0
-            }
-            view.frame.origin.y -= keyboardHeight
-        }
-    }
-    
-    @objc func keyboardWillHide(notification: NSNotification) {
-        if let keyboardFrame: NSValue = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as? NSValue {
-            let keyboardRectangle = keyboardFrame.cgRectValue
-            let keyboardHeight = keyboardRectangle.height
-            if view.frame.origin.y != 0{
-                view.frame.origin.y += keyboardHeight
-            }
-        }
-        
-//        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-//            if view.frame.origin.y != 0{
-//                view.frame.origin.y += keyboardSize.height
-//            }
-//        }
-    }
-}
-

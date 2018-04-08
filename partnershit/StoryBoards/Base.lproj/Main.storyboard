@@ -280,17 +280,17 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享代碼:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q66-Cf-ubw">
-                                            <rect key="frame" x="260.5" y="25" width="53" height="15"/>
+                                            <rect key="frame" x="247.5" y="25" width="53" height="15"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <color key="textColor" red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGE-9N-0HJ">
-                                            <rect key="frame" x="316" y="25" width="55" height="15"/>
+                                            <rect key="frame" x="303" y="20" width="68" height="20"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="15" id="wMM-hS-2fM"/>
+                                                <constraint firstAttribute="height" constant="20" id="wMM-hS-2fM"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                             <state key="normal" title="M5P67"/>
                                             <connections>
                                                 <action selector="channelCodeBtn:" destination="Yjg-cm-wvy" eventType="touchUpInside" id="Nbf-ZT-z8N"/>

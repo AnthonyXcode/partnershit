@@ -19,6 +19,7 @@ class InfoAlertViewController: UIViewController, UITableViewDataSource, UITableV
     @IBAction func closeBtn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    @IBOutlet weak var sendBtn: UIButton!
     @IBAction func sendBtn(_ sender: Any) {
         if let msg = msgTxtFiled.text {
             if (msg != "") {
@@ -37,7 +38,6 @@ class InfoAlertViewController: UIViewController, UITableViewDataSource, UITableV
                 msgTxtFiled.text = ""
             }
         }
-        dismissKeyboard()
     }
     
     let ref: DatabaseReference! = Database.database().reference()
@@ -56,8 +56,7 @@ class InfoAlertViewController: UIViewController, UITableViewDataSource, UITableV
         let messageNib = UINib(nibName: "MessageTableViewCell", bundle: nil)
         msgTV.register(messageNib, forCellReuseIdentifier: "msgCell")
         firebaseFetching()
-        hideKeyboardWhenTappedAround()
-        resizeViewForKeyboard()
+        sendBtn.layer.cornerRadius = 4
         // Do any additional setup after loading the view.
     }
 

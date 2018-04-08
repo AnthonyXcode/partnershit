@@ -42,8 +42,8 @@ class ChannelTableViewController: UITableViewController {
         for obj in realmChannels {
             channels[obj.id] = obj.name
         }
-        uid = preferences.object(forKey: Constants.uid) as! String
-        userName = preferences.object(forKey: Constants.UserName) as! String
+        uid = preferences.string(forKey: Constants.uid)
+        userName = preferences.string(forKey: Constants.UserName)
         firebaseFetching()
     }
     
@@ -162,6 +162,8 @@ class ChannelTableViewController: UITableViewController {
     }
     
     func firebaseFetching () {
+        print(self.uid)
+        print(self.userName)
         self.ref.child("users").child(self.uid).child("detail").updateChildValues(["user_name": self.userName])
         self.ref.child("users").child(self.uid).child("channels").observe(.value, with: { (snapshot) in
             if let value = snapshot.value as? NSDictionary {

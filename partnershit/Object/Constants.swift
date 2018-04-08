@@ -14,4 +14,5 @@ class Constants {
     static let Email = "USER_EMAIL"
     static let LevelKey = "currentLevelKey"
     static let uid = "UID"
+    static let versionCode = "versionCode"
 }
