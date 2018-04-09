@@ -8,16 +8,13 @@
 
 import UIKit
 import Firebase
-import RealmSwift
 import FacebookLogin
 import FacebookCore
-import RealmSwift
 
 class ViewController: UIViewController {
     
     let preferences = UserDefaults.standard
     let version = Bundle.main.infoDictionary!["CFBundleShortVersionString"]!
-    let realm = try! Realm()
 
     @IBOutlet var nameTxt: UITextField!
     @IBOutlet weak var accountTxt: UITextField!

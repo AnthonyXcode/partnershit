@@ -865,6 +865,7 @@
                         <outlet property="msgTxtFiled" destination="PkJ-cT-82Q" id="g5d-3s-xTb"/>
                         <outlet property="priceLab" destination="VCQ-bl-2iz" id="XSR-bs-tCz"/>
                         <outlet property="priceStatLab" destination="1LZ-Od-Wo6" id="lab-2G-AyK"/>
+                        <outlet property="sendBtn" destination="3UI-TT-T0T" id="AMO-1J-8R6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5PK-fT-lbw" userLabel="First Responder" sceneMemberID="firstResponder"/>

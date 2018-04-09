@@ -15,4 +15,5 @@ class Constants {
     static let LevelKey = "currentLevelKey"
     static let uid = "UID"
     static let versionCode = "versionCode"
+    static let channels = "channels"
 }

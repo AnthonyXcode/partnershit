@@ -11,9 +11,9 @@ target 'partnershit' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'OneSignal', '>= 2.5.2', '< 3.0'
-  pod 'RealmSwift'
   pod 'SwiftMessages'
   pod 'IQKeyboardManagerSwift', '5.0.0'
+  
   # Pods for partnershit
 
   target 'partnershitTests' do

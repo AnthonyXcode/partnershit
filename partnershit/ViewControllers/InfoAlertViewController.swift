@@ -129,21 +129,32 @@ class InfoAlertViewController: UIViewController, UITableViewDataSource, UITableV
         }
     }
     
+    func getMemberArr(userId: String, onesignalId: String) {
+        ref.child("users").child(userId).child("detail").observeSingleEvent(of: .value, with: {(snapshot) in
+            if let detail = snapshot.value as? [String: String] {
+                let object = Member()
+                object.userId = userId
+                object.userName =  detail["user_name"] as! String
+                if let onesignalId = detail["onesignal_id"] as? String {
+                    object.oneSignalId = onesignalId
+                } else {
+                    object.oneSignalId = ""
+                }
+                self.members.append(object)
+            }
+            self.memberTV.reloadData()
+            self.reloadStatement()
+        })
+    }
+    
     func firebaseFetching () {
         ref.child("subscriber").child(channelId).observe(DataEventType.value, with: {(snapshot) in
             self.members = []
             if let postDict = snapshot.value as? [String: AnyObject] {
                 for (key, value) in postDict {
-                    let object = Member()
-                    object.userId = key
-                    print(value)
-                    object.userName = value["user_name"] as! String
-                    object.oneSignalId = value["onesignal_id"] as! String
-                    self.members.append(object)
+                    self.getMemberArr(userId: key, onesignalId: value["onesignal_id"] as! String)
                 }
             }
-            self.memberTV.reloadData()
-            self.reloadStatement()
         })
         
         ref.child("messages").child(channelId).observe(DataEventType.value) { (snapshot) in

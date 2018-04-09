@@ -8,15 +8,13 @@
 
 import UIKit
 import CoreData
-import RealmSwift
 import Firebase
 import OneSignal
 
 class ChannelTableViewController: UITableViewController {
     
     @IBOutlet var channelsTableView: UITableView!
-    var channels = [String: String]()
-    let realm = try! Realm()
+    var channels = [ChannelsObject]()
     var ref: DatabaseReference! = Database.database().reference()
     let oneSignalState: OSPermissionSubscriptionState = OneSignal.getPermissionSubscriptionState()
     var uid: String! = ""
@@ -38,9 +36,8 @@ class ChannelTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let realmChannels = realm.objects(ChannelsObject.self)
-        for obj in realmChannels {
-            channels[obj.id] = obj.name
+        if let decode = preferences.object(forKey: Constants.channels) {
+            channels = NSKeyedUnarchiver.unarchiveObject(with: decode as! Data) as! [ChannelsObject]
         }
         uid = preferences.string(forKey: Constants.uid)
         userName = preferences.string(forKey: Constants.UserName)
@@ -70,15 +67,15 @@ class ChannelTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChannelItem", for: indexPath) as! ChannelTableViewCell
-        let channelId = Array(channels.keys)[indexPath.row]
-        cell.channelName.text = channels[channelId]
-        cell.channelCodeBtn.setTitle(channelId, for: .normal)
+        let channel = channels[indexPath.row]
+        cell.channelName.text = channel.name
+        cell.channelCodeBtn.setTitle(channel.id, for: .normal)
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let channelId = Array(channels.keys)[indexPath.row]
-        let channel = [channelId: channels[channelId]]
+        let channelObj = channels[indexPath.row]
+        let channel = [channelObj.id: channelObj.name]
         self.performSegue(withIdentifier: "ToDetailSegue", sender: channel)
     }
     
@@ -94,16 +91,18 @@ class ChannelTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let channelId = Array(channels.keys)[indexPath.row]
-            let channel = realm.objects(ChannelsObject.self).filter("id == %@", channelId)
-            try! realm.write {
-                realm.delete(channel)
+            var newChannels = [ChannelsObject]()
+            let channelId = channels[indexPath.row].id
+            for channel in channels {
+                if (channel.id != channelId) {
+                    newChannels.append(channel)
+                }
             }
+            preferences.set(newChannels, forKey: Constants.channels)
             self.ref.child("users").child(self.uid).child("channels").child(channelId).removeValue()
             self.removeSubscriber(channelId: channelId)
-            channels.removeValue(forKey: channelId)
+            channels.remove(at: indexPath.row)
             channelsTableView.deleteRows(at: [indexPath], with: .automatic)
-        } else if editingStyle == .insert {
         }
     }
     
@@ -162,21 +161,20 @@ class ChannelTableViewController: UITableViewController {
     }
     
     func firebaseFetching () {
-        print(self.uid)
-        print(self.userName)
         self.ref.child("users").child(self.uid).child("detail").updateChildValues(["user_name": self.userName])
+        if let userId = oneSignalState.subscriptionStatus.userId {
+            self.ref.child("users").child(self.uid).child("detail").updateChildValues(["onesignal_id": userId])
+        }
         self.ref.child("users").child(self.uid).child("channels").observe(.value, with: { (snapshot) in
             if let value = snapshot.value as? NSDictionary {
+                self.channels = []
                 for (id, name) in value {
-                    self.channels[id as! String] = name as? String
-                    let channel = ChannelsObject()
-                    channel.id = id as! String
-                    channel.name = name as! String
-                    try! self.realm.write {
-                        self.realm.add(channel)
-                    }
-                    self.channelsTableView.reloadData()
+                    let channel = ChannelsObject(id: id as! String, name: name as! String)
+                    self.channels.append(channel)
                 }
+                let channelObjs = NSKeyedArchiver.archivedData(withRootObject: self.channels)
+                self.preferences.set(channelObjs, forKey: Constants.channels)
+                self.channelsTableView.reloadData()
             }
         })
     }

@@ -8,12 +8,10 @@
 
 import UIKit
 import Firebase
-import RealmSwift
 
 class MyViewController: UIViewController {
     
     let preferences = UserDefaults.standard
-    let realm = try! Realm()
     var userName = ""
     
     @IBAction func logoutBtn(_ sender: Any) {
@@ -25,9 +23,6 @@ class MyViewController: UIViewController {
         if let vc = self.storyboard?.instantiateViewController(withIdentifier: "homePage")
         {
             self.showDetailViewController(vc, sender: self)
-        }
-        try! realm.write {
-            realm.deleteAll()
         }
     }
     

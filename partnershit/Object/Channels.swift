@@ -7,9 +7,23 @@
 //
 
 import Foundation
-import RealmSwift
 
-class ChannelsObject: Object {
-    @objc dynamic var name = ""
-    @objc dynamic var id = ""
+class ChannelsObject: NSObject, NSCoding {
+    var name = ""
+    var id = ""
+    
+    init(id: String, name: String) {
+        self.id = id
+        self.name = name
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.id = aDecoder.decodeObject(forKey: "id") as? String ?? ""
+        self.name = aDecoder.decodeObject(forKey: "name") as? String ?? ""
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(id, forKey: "id")
+        aCoder.encode(name, forKey: "name")
+    }
 }

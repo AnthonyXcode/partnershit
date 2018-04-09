@@ -133,9 +133,7 @@ class ArchiveTableViewController: UITableViewController {
             self.tableView.reloadData()
             if let postDict = snapshot.value as? [String: String] {
                 for (key, value) in postDict {
-                    let channel = ChannelsObject()
-                    channel.id = key
-                    channel.name = value
+                    let channel = ChannelsObject(id: key, name: value)
                     self.channels.append(channel)
                     self.firebaseFetchingOnch(channelId: key)
                 }
