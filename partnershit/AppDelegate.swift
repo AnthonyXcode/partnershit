@@ -41,6 +41,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Inside your application(application:didFinishLaunchingWithOptions:)
         
+        // get your storyboard
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        // instantiate your desired ViewController
+        let homeController = storyboard.instantiateViewController(withIdentifier: "homePage") as! ViewController
+        let mainController = storyboard.instantiateViewController(withIdentifier: "mainTabbar")
+        
+        // Because self.window is an optional you should check it's value first and assign your rootViewController
+        if let window = self.window {
+            if (UserDefaults.standard.bool(forKey: Constants.isLogin)) {
+                window.rootViewController = mainController
+            } else {
+                window.rootViewController = homeController
+            }
+        }
         return true
     }
 

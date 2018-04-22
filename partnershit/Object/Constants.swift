@@ -16,4 +16,5 @@ class Constants {
     static let uid = "UID"
     static let versionCode = "versionCode"
     static let channels = "channels"
+    static let isLogin = "isLogin"
 }

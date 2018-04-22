@@ -45,10 +45,10 @@ class ViewController: UIViewController {
             self.preferences.set(self.version as! String, forKey: Constants.versionCode)
         }
         Auth.auth().addStateDidChangeListener{(auth, user) in
-            print(user)
             if let u = user {
                 if self.preferences.string(forKey: Constants.versionCode) != nil {
                     self.preferences.set(u.uid, forKey: Constants.uid)
+                    self.preferences.set(true, forKey: Constants.isLogin)
                     if let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainTabbar")
                     {
                         self.showDetailViewController(vc, sender: self)
